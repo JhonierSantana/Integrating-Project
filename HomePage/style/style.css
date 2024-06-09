@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #093931FF;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 62px;
+}
+
+.header-menu{
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+    width: 431px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    font-family: Manrope;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    opacity: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.text {
+    position: absolute;
+    top: 8px;
+    left: 280px;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #F5D38EFF;
+}
+
+.nav-icons {
+    display: flex;
+    position: absolute;
+    top: 21px;
+    gap: 15px;
+    left: 1330px;
+    margin-left: 50px;
+}
+
+.nav-icons a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.container1 {
+    background-image: url("/HomePage/assets/fondoSeda.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 821px;
+    display: flex;
+}
+
+.main-text{
+    position: absolute;
+    top: 100px;
+    left: 280px;
+    width: 537px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 62px;
+    line-height: 94px;
+    font-weight: 400;
+    color: #F5D38EFF;
+}
+
+.main-button {
+    position: absolute;
+    top: 570px;
+    left: 10px;
+    width: 200px;
+    height: 52px;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Manrope;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    background: #00000000;
+    opacity: 1;
+    border-radius: 26px;
+    border-width: 1px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+.main-button:hover {
+    color: #DEE1E6FF;
+    background: #00000000;
+}
+
+.main-button:hover:active {
+    color: #BCC1CAFF;
+    background: #00000000;
+}
+
+.main-button:disabled {
+    opacity: 0.4;
+}
+
+.main-image {
+    position: absolute;
+    top: 139px;
+    left: 1000px;
+}
+
+.main-image img {
+    width: 407px;
+    height: 543px;
+    border-radius: 8px;
+}
+
+.main-image2 {
+    position: absolute;
+    top: 250px;
+    left: 1280px;
+}
+
+.main-image2 img {
+    width: 241px;
+    height: 321px;
+    border-radius: 121px 121px 0px 0px;
+    box-shadow: 0px 8px 17px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.container-feature {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+}
+
+.features {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    margin: 50px;
+    max-width: 250px;
+}
+
+.icon-feature {
+    fill: #F2C66DFF;
+    color: #F2C66DFF;
+}
+
+.container-carousel {
+    display: flex;
+    align-items: center;
+}
+
+.container-carousel button {
+    border-radius: 26px;
+    border-width: 1px;
+    background: #00000000;
+    font-family: Manrope;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.text-carousel {
+    flex: 1;
+    text-align: center;
+}
+
+.item {
+    position: relative; /* Establece la posición relativa para que el texto absoluto se posicione correctamente */
+    display: inline-block; /* Permite que los elementos estén en línea */
+    margin: 0 10px; /* Ajusta los márgenes entre las imágenes */
+}
+
+.item img {
+    top: 0;
+    max-width: 276px;
+    height: 320px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.item p {
+    position: absolute; /* Posiciona el texto absolutamente con respecto al elemento padre */
+    text-align: center; /* Alinea el texto al centro */
+    top: 380px;
+    left: -6px;
+    margin: 0; /* Elimina cualquier margen predeterminado */
+    padding: 8px; /* Añade relleno para mejorar la apariencia */ /* Agrega un fondo semi-transparente */
+}
+
