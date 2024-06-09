@@ -193,9 +193,9 @@ nav ul li a {
 }
 
 .item {
-    position: relative; /* Establece la posición relativa para que el texto absoluto se posicione correctamente */
-    display: inline-block; /* Permite que los elementos estén en línea */
-    margin: 0 10px; /* Ajusta los márgenes entre las imágenes */
+    position: relative;
+    display: inline-block;
+    margin: 0 10px
 }
 
 .item img {
@@ -207,11 +207,11 @@ nav ul li a {
 }
 
 .item p {
-    position: absolute; /* Posiciona el texto absolutamente con respecto al elemento padre */
-    text-align: center; /* Alinea el texto al centro */
+    position: absolute;
+    text-align: center;
     top: 380px;
     left: -6px;
-    margin: 0; /* Elimina cualquier margen predeterminado */
-    padding: 8px; /* Añade relleno para mejorar la apariencia */ /* Agrega un fondo semi-transparente */
+    margin: 0;
+    padding: 8px;
 }
 
