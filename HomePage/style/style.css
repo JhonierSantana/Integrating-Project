@@ -1,23 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
 header {
     background: #093931FF;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 62px;
 }
 
-.header-menu{
+.header-menu {
     position: absolute;
     top: 10px;
     left: 1000px;
@@ -28,8 +30,7 @@ header {
     font-family: Manrope;
     font-size: 14px;
     line-height: 22px;
-    font-weight: 400;
-    opacity: 1;
+    font-weight: 100;
 }
 
 nav ul {
@@ -47,11 +48,15 @@ nav ul li a {
     position: absolute;
     top: 8px;
     left: 280px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", serif;
     font-size: 30px;
     line-height: 46px;
-    font-weight: 400;
     color: #F5D38EFF;
+}
+
+.main-text h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: normal;
 }
 
 .nav-icons {
@@ -70,7 +75,8 @@ nav ul li a {
 }
 
 .container1 {
-    background-image: url("/HomePage/assets/fondoSeda.webp");
+    background-image: url(/HomePage/assets/texture.svg);
+    background-color: #093931FF;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -78,15 +84,16 @@ nav ul li a {
     display: flex;
 }
 
-.main-text{
+.main-text {
     position: absolute;
     top: 100px;
     left: 280px;
     width: 537px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 62px;
     line-height: 94px;
-    font-weight: 400;
     color: #F5D38EFF;
 }
 
@@ -100,7 +107,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     display: flex;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
@@ -114,17 +121,8 @@ nav ul li a {
 }
 
 .main-button:hover {
-    color: #DEE1E6FF;
-    background: #00000000;
-}
-
-.main-button:hover:active {
-    color: #BCC1CAFF;
-    background: #00000000;
-}
-
-.main-button:disabled {
-    opacity: 0.4;
+    background: #005500;
+    color: white;
 }
 
 .main-image {
@@ -158,7 +156,6 @@ nav ul li a {
     gap: 20px;
     padding: 20px;
     background-color: #f9f9f9;
-    
 }
 
 .features {
@@ -184,14 +181,20 @@ nav ul li a {
     border-radius: 26px;
     border-width: 1px;
     background: #00000000;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     line-height: 28px;
 }
 
+.main-button2:hover {
+    background: #005500;
+    color: white;
+}
+
 .text-carousel {
     flex: 1;
-    text-align: center;
+    max-width: 300px;
+    padding-left: 50px;
 }
 
 .item {
@@ -227,7 +230,7 @@ nav ul li a {
 .our-h1 {
     font-size: 2em;
     color: #005500;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .grid-container {
@@ -247,22 +250,13 @@ nav ul li a {
     transition: transform 0.3s;
 }
 
-.grid-item p {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: 0;
-    font-size: 1.2em;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
 .grid-item img:hover {
     transform: scale(1.05);
+}
+
+.grid-item:nth-child(2),
+.grid-item:nth-child(5) {
+    margin-top: -30px;
 }
 
 .shop-now {
@@ -270,7 +264,7 @@ nav ul li a {
     border-width: 1px;
     color: #0D554AFF;
     background: #00000000;
-    font-family: Manrope;
+    font-family: 'Manrope', sans-serif;
     font-size: 15px;
     line-height: 28px;
     margin: 20px;
@@ -283,10 +277,11 @@ nav ul li a {
     color: white;
 }
 
-.container-video{
+.container-video {
     display: flex;
     align-items: center;
 }
+
 .our-story {
     text-align: center;
     width: 80%;
@@ -306,7 +301,6 @@ nav ul li a {
     border: 2px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    
 }
 
 .story-content img {
@@ -340,38 +334,40 @@ nav ul li a {
     height: 522px;
     background: #093931FF;
     margin-top: 30px;
-  }
-  
-  .testimonial-container {
+}
+
+.testimonial-container {
     display: flex;
     width: 100%;
     max-width: 1000px;
     align-items: center;
-  }
-  
-  .testimonial-text {
+}
+
+.testimonial-text {
     width: 50%;
     margin-right: 20px;
     margin-left: 8.5rem;
     max-width: 400px;
-  }
-  
-  .testimonial-text h2 {
+}
+
+.testimonial-text h2 {
     font-size: 2em;
     color: #fff;
-  }
-  
-  .testimonial-text p {
+}
+
+.testimonial-text p {
     font-size: 1.2em;
     color: #ddd;
-  }
-  .testimonial-p {
+}
+
+.testimonial-p {
     font-size: 16px; 
     line-height: 26px; 
     font-weight: 400; 
     color: #FFFFFFFF;
-  }
-  .testimonial-quote {
+}
+
+.testimonial-quote {
     display: flex;
     background: #171A1F4D;
     border-radius: 10px;
@@ -380,47 +376,87 @@ nav ul li a {
     height: 375px;
     left: 712px;
     margin-left: 200px;
-  }
-  
-  .testimonial-quote img {
-    width: 300px;
-    height: 375px;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
-
-  .quote-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .customer-name {
-    font-size: 20px; 
-  line-height: 30px; 
-  font-weight: 700; 
-  color: #FFFFFFFF;
-  }
-
-.footer {
-    display: flex;
-    width: 100%; 
-    height: 234px;
-    background: #093931FF;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    color: #bbb;
 }
 
-.footer div {
-    flex: 1;
-    
-  }
+.testimonial-quote img {
+    width: 300px;
+    height: 335px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
 
-.footer-brand {
-    margin-left: 132px;
-    margin-top: -18px;
-    margin-right: -200px;
+.quote-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-name {
+    font-size: 20px; 
+    line-height: 30px; 
+    font-weight: 700; 
+    color: #FFFFFFFF;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    background: #093931FF;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-subscribe p {
+    font-size: 1em;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.footer-subscribe form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    width: 70%;
+}
+
+.footer-subscribe button {
+    padding: 10px 20px;
+    background-color: rgb(247, 228, 29);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px 30px 30px 0px;
+    width: 30%;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .footer-brand h3 {
@@ -431,83 +467,353 @@ nav ul li a {
     color: #F5D38EFF;
 }
 
-.footer-links {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-links h4 {
+.h4-footer {
     font-size: 1.2em;
-    color: #ddd;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin: 10px 0;
-}
-
-.footer-links a {
-    color: #bbb;
-    text-decoration: none;
-}
-
-.footer-subscribe {
-    flex: 2;
-    margin-left: auto;
-}
-
-.footer-subscribe h4 {
-    font-size: 1.2em;
-    color: #ddd;
-    margin-left: 5px;
+    color: #fff;
 }
 
 .footer-subscribe p {
     font-size: 1em;
-    color: #bbb;
+    color: #fff;
     margin-left: 5px;
 }
 
-.footer-subscribe form {
-    display: flex;
-    width: 270px; 
-    height: 36px;
-    font-size: 14px; 
-    line-height: 22px; 
-    font-weight: 400; 
-    background: #00000000;
-    margin-left: 5px;
+.footer-links div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 50px;
 }
 
-.footer-subscribe input {
-    padding: 10px;
-    border: none;
-    border-radius: 30px 0 0 30px;
+.footer-brand,
+.footer-links,
+.footer-subscribe {
+    flex: 1;
+    margin: 0 50px;
 }
 
-.footer-subscribe button {
-    padding: 10px 20px;
-    background-color: rgb(247, 228, 29);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border-radius: 0px 30px 30px 0px;
-
+.footer-brand h3,
+.footer-links h4,
+.footer-subscribe h4 {
+    font-weight: 300;
 }
 
-.footer-subscribe button:hover {
-    background-color: #678;
+/* Dispositivos de escritorio */
+@media (min-width: 992px) {
+    /* Se mantienen las mismas reglas CSS base */
 }
 
-.social-media img {
-    width: 24px;
-    height: 24px;
-    margin-top: 20px;
+/* Dispositivos tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+    .header-menu,
+    .nav-icons,
+    .main-text,
+    .main-image,
+    .main-image2 {
+        left: initial;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-menu,
+    .nav-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main-text {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .main-button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .main-image,
+    .main-image2 {
+        position: static;
+        margin-top: 20px;
+        left: initial;
+    }
+
+    .container-feature {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .features {
+        margin: 20px 0;
+    }
+
+    .container-carousel {
+        flex-direction: column;
+    }
+
+    .text-carousel {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .collections {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .our-story,
+    .testimonial-section {
+        flex-direction: column;
+    }
+
+    .testimonial-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .testimonial-quote {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-brand,
+    .footer-subscribe {
+        margin: 10px 0;
+    }
 }
+
+/* Dispositivos móviles */
+/* Dispositivos de escritorio */
+@media (min-width: 992px) {
+    /* Se mantienen las mismas reglas CSS base */
+}
+
+/* Dispositivos tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+    .header-menu,
+    .nav-icons,
+    .main-text,
+    .main-image,
+    .main-image2 {
+        left: initial;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-menu,
+    .nav-icons {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main-text {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .main-button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .main-image,
+    .main-image2 {
+        position: static;
+        margin-top: 20px;
+        left: initial;
+    }
+
+    .container-feature {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .features {
+        margin: 20px 0;
+    }
+
+    .container-carousel {
+        flex-direction: column;
+    }
+
+    .text-carousel {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .collections {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .our-story,
+    .testimonial-section {
+        flex-direction: column;
+    }
+
+    .testimonial-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .testimonial-quote {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-brand,
+    .footer-subscribe {
+        margin: 10px 0;
+    }
+}
+
+/* Diseño responsive en construcción */
+/* @media (max-width: 767px) {
+    .header-menu,
+    .nav-icons,
+    .main-text,
+    .main-image,
+    .main-image2 {
+        left: initial;
+        position: static;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header-menu,
+    .nav-icons {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .main-text {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .main-button {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .main-image,
+    .main-image2 {
+        position: static;
+        margin-top: 20px;
+        left: initial;
+    }
+
+    .container-feature {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .features {
+        margin: 20px 0;
+    }
+
+    .container-carousel {
+        flex-direction: column;
+    }
+
+    .text-carousel {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .collections {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .our-story,
+    .testimonial-section {
+        flex-direction: column;
+    }
+
+    .testimonial-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .testimonial-quote {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links,
+    .footer-brand,
+    .footer-subscribe {
+        margin: 10px 0;
+    }
+} */
