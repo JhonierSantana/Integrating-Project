@@ -154,7 +154,6 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
   background-color: #f9f9f9;
 }
 
@@ -166,8 +165,8 @@
 }
 
 .icon-feature {
-  fill: #f2c66dff;
-  color: #f2c66dff;
+  fill: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .container-products {
@@ -190,6 +189,10 @@
   max-width: 300px;
 }
 
+.text-products {
+  align-self: center;
+}
+
 .text-products p {
   height: 112px;
   line-height: 26px;
@@ -210,7 +213,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .item {
@@ -231,7 +234,7 @@
   height: 320px;
   margin: 8px;
   border-radius: 8px 8px 0 0;
-  width: 100%;
+  width: 90%;
 }
 
 .item p {
@@ -240,15 +243,6 @@
   left: -6px;
   margin: 0;
   padding: 8px;
-}
-
-.our-Collections {
-  position: relative;
-  left: 0;
-  width: 100%;
-  height: 1082px;
-  text-align: center;
-  padding: 48px 20px;
 }
 
 .collections {
@@ -329,7 +323,7 @@
   justify-content: center;
   width: 100%;
   height: 564px;
-  padding: 48px 132px;
+  padding: 0 132px;
 }
 
 .our-story {
@@ -433,8 +427,10 @@
 
 .card-buttons {
   display: flex;
-  position: absolute;
+  position: relative;
   gap: 18px;
+  top: 58px;
+  left: 140px;
 }
 
 .buttonCircle {
@@ -535,13 +531,13 @@
 
 .footer-form {
   display: flex;
-  width: max-content;
   height: 36px;
-  outline: none;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .form-subscripcion-input {
+  width: 250px;
   background-color: transparent;
   border: solid 1px;
   padding: 10px;
@@ -557,6 +553,7 @@
   background: var(--color-secondary);
   border: none;
   border-radius: 0px 30px 30px 0px;
+  padding: 0 12px;
 }
 
 .footer-container2 {
@@ -671,21 +668,28 @@
     transform: translate(-46%);
   }
 
+  .main-section-products {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
   .container-feature {
     flex-direction: column;
-    padding: 10px;
+    gap: 10px;
     align-items: center;
   }
 
   .container-products {
+    display: flex;
     flex-direction: column;
-    padding: 1px;
-    margin: 10%;
+    padding: 10%;
     text-align: center;
+    height: auto;
   }
 
-  .container-products h2 {
-    width: 100%;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 
   .text-products p {
@@ -701,39 +705,121 @@
   .products-grid {
     flex-direction: column;
     margin: 0;
+    gap: 20px;
   }
 
   .item {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
   }
 
   .collections {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-item {
+    margin: 10px;
+  }
+
+  .grid-container {
+    padding-bottom: -20px;
   }
 
   .video-story {
     padding: 20px;
   }
 
+  .our-story {
+    margin-bottom: 20px;
+  }
+
   .footer-section {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+  }
+
+  .footer-card {
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #171a1f4d;
+    margin-bottom: 40vh;
+  }
+
+  .card-buttons {
+    display: flex;
+    position: relative;
+    gap: 18px;
+    top: 0px;
+    left: 0px;
   }
 
   .footer-section-container,
   .footer-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    padding: 10px;
+    padding: 0 5vh;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-nav-column {
+    margin-right: 0;
+  }
+
+  .card-text-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 324px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer-container2 {
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  .footer-notices {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-subscripcion-input {
+    border-radius: 30px;
+    margin-bottom: 10px;
   }
 
   .footer-logo-text {
     padding: 20px;
     font-size: 25px;
+  }
+  .button-submit {
+    font-family: var(--tipograhy-body);
+    background: var(--color-secondary);
+    border-radius: 30px;
   }
 }
