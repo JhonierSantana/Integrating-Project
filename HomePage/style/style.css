@@ -95,7 +95,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
-  background-image: url(.../assets/icons/texture.svg);
+  background-image: url(../assets/icons/texture.svg);
   background-color: var(--color-primary);
 }
 
@@ -166,7 +166,9 @@
 /* Contenedor de características */
 .container-feature {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
   gap: 20px;
   background-color: var(--color-links);
 }
