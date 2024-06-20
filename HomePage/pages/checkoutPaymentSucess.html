@@ -7,139 +7,92 @@
     <title>Checkout Payment Sucess</title>
   </head>
   <body>
-    <header class="header"></header>
-    <nav class="header__nav">
-      <a class="header__logo" href="">Darling .</a>
-      <div class="header__links">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Collections</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-        <div class="header__buttons">
-          <button>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              >
-              <path
-                d="M10 8.5C11.6569 8.5 13 7.15685 13 5.5C13 3.84315 11.6569 2.5 10 2.5C8.34315 2.5 7 3.84315 7 5.5C7 7.15685 8.34315 8.5 10 8.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                />
-              <path
-                d="M10 11C8.27609 11 6.62279 11.6848 5.40381 12.9038C4.18482 14.1228 3.5 15.7761 3.5 17.5L16.5 17.5C16.5 15.7761 15.8152 14.1228 14.5962 12.9038C13.3772 11.6848 11.7239 11 10 11Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                />
-            </svg>
-          </button>
-          <button>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              >
-              <path
-                d="M2.5 2.5L5.5 2.5L5.5 10C5.5 10.828 6.172 11.5 7 11.5L14.419 11.5C15.065 11.5 15.638 11.087 15.842 10.474L17.5 5.5L5.5 5.5"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                />
-              <path
-                d="M6 17.5C6.82843 17.5 7.5 16.8284 7.5 16C7.5 15.1716 6.82843 14.5 6 14.5C5.17157 14.5 4.5 15.1716 4.5 16C4.5 16.8284 5.17157 17.5 6 17.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                />
-              <path
-                d="M15 17.5C15.8284 17.5 16.5 16.8284 16.5 16C16.5 15.1716 15.8284 14.5 15 14.5C14.1716 14.5 13.5 15.1716 13.5 16C13.5 16.8284 14.1716 17.5 15 17.5Z"
-                stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                />
-            </svg>
-          </button>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo" href="">Darling .</a>
+        <div class="header__links">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Shop</a>
+            </li>
+            <li>
+              <a href="">Collections</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <button>
+              <i><img src="../assets/icons/profile.svg" alt="" /></i>
+            </button>
+            <button>
+              <i><img src="../assets/icons/carShopping.svg" alt="" /></i>
+            </button>
+          </div>
         </div>
-      </div>
-      <button class="header__menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="40px"
-          viewBox="0 -960 960 960"
-          width="40px"
-          fill="#f5d38eff"
-          >
-          <path
-            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
-            />
-        </svg>
-      </button>
-    </nav>
+      </nav>
     </header>
     <main class="main-section">
-        <div class="thank-you-section">
-            <img src="../assets/images/image91.jpg" alt="">
-            <h1>Thank you for your purchase!</h1>
-            <p>You will receive an confirmation letter through your email</p>
-        </div>
-        <div class="order-summary">
-            <div class="order-details">
-                <div class="order-item">
-                    <div class="order-item-iconText">
-                        <i><img src="../assets/icons/calendar.svg" alt=""></i>
-                        <p>Date</p>
-                    </div>
-                    <p class="order-item-info">27/04/2022</p>
-                </div>
-
-                <div class="order-item">
-                    <div class="order-item-iconText">
-                        <i><img src="../assets/icons/customer.svg" alt=""></i>
-                        <p>Customer</p>
-                    </div>
-                    <p class="order-item-info">John Miller</p>
-                </div>
-
-                <div class="order-item">
-                    <div class="order-item-iconText">
-                        <i><img src="../assets/icons/payment.svg" alt=""></i>
-                        <p>Payment Method</p>
-                    </div>
-                    <img class="order-item-info" src="../assets/images/visa.png" alt="">
-                </div>
-
-                <div class="order-item">
-                    <div class="order-item-iconText">
-                        <i><img src="../assets/icons/order.svg" alt=""></i>
-                        <p>Order Number</p>
-                    </div>
-                    <p class="order-item-info">586789963</p>
-                </div>
-
-                <div class="order-item">
-                    <div class="order-item-iconText">
-                        <i><img src="../assets/icons/total.svg" alt=""></i>
-                        <p>Total</p>
-                    </div>
-                    <p class="order-item-info">$1058.72</p>
-                </div>
+      <div class="thank-you-section">
+        <img src="../assets/images/image91.jpg" alt="" />
+        <h1>Thank you for your purchase!</h1>
+        <p>You will receive an confirmation letter through your email</p>
+      </div>
+      <div class="order-summary">
+        <div class="order-details">
+          <div class="order-item">
+            <div class="order-item-iconText">
+              <i><img src="../assets/icons/calendar.svg" alt="" /></i>
+              <p>Date</p>
             </div>
-            <div class="order-line">
-                <h2>Order Line</h2>
-                <div class="product-item">
+            <p class="order-item-info">27/04/2022</p>
+          </div>
 
-                </div>
+          <div class="order-item">
+            <div class="order-item-iconText">
+              <i><img src="../assets/icons/customer.svg" alt="" /></i>
+              <p>Customer</p>
             </div>
+            <p class="order-item-info">John Miller</p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item-iconText">
+              <i><img src="../assets/icons/payment.svg" alt="" /></i>
+              <p>Payment Method</p>
+            </div>
+            <img
+              class="order-item-info"
+              src="../assets/images/visa.png"
+              alt=""
+            />
+          </div>
+
+          <div class="order-item">
+            <div class="order-item-iconText">
+              <i><img src="../assets/icons/order.svg" alt="" /></i>
+              <p>Order Number</p>
+            </div>
+            <p class="order-item-info">586789963</p>
+          </div>
+
+          <div class="order-item">
+            <div class="order-item-iconText">
+              <i><img src="../assets/icons/total.svg" alt="" /></i>
+              <p>Total</p>
+            </div>
+            <p class="order-item-info">$1058.72</p>
+          </div>
         </div>
+        <div class="order-line">
+          <h2>Order Line</h2>
+          <div class="product-item"></div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
