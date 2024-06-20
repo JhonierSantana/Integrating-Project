@@ -128,8 +128,10 @@
 main {
   padding: 3.8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17.4rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
+  width: 80%;
+  margin: auto;
 }
 
 .card {
@@ -140,11 +142,10 @@ main {
 
 .card figure {
   width: 100%;
-  aspect-ratio: 276/320;
 }
-/* aqui*/
-.card.large {
-  grid-column: span 2;
+
+.card.large figure {
+  aspect-ratio: 4/5.1;
 }
 
 .card figure img {
@@ -171,12 +172,8 @@ main {
 /* aqui*/
 @media (min-width: 600px) {
   .card.large {
-    grid-column: span 2 ;
+    grid-column: span 2;
     grid-row: span 2;
-  }
-
-  .card.large figure {
-    aspect-ratio: 3/2;
   }
 
   .card.large h2 {
