@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* Variables globales que se reutilizan */
 :root {
   --color-primary: #093931ff;
   --color-secondary: #f5d38eff;
@@ -11,12 +12,15 @@
   --tipograhy-body: "Manrope", sans-serif;
 }
 
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* HEADER */
+/* Estilos del contenedor del header y del nav */
 .header__nav {
   background-color: var(--color-primary);
   display: flex;
@@ -45,10 +49,6 @@
   text-decoration: none;
   color: var(--color-links);
   font-family: var(--tipograhy-body);
-}
-
-.header__links a:hover {
-  color: var(--color-secondary);
 }
 
 .header__logo {
@@ -82,6 +82,8 @@
   display: none;
 }
 
+/* MAIN SECTION */
+/* Contenedor principal de la sección principal */
 .main-container {
   display: flex;
   width: 80%;
@@ -90,16 +92,17 @@
   height: auto;
 }
 
+/* Contenedor de Order summmary */
+.order-summary {
+  width: 75%;
+  height: 505px;
+}
+
 .order-summary,
 .payment-method {
   margin-top: 46px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
-.order-summary {
-  width: 75%;
-  height: 505px;
 }
 
 .summary-price {
@@ -167,6 +170,7 @@
   fill: #565e6cff;
 }
 
+/* Contenedor de Payment Method */
 .payment-method {
   width: 348px;
   height: 620px;
@@ -363,7 +367,10 @@
   color: #ffffffff;
   font-family: var(--tipograhy-body);
 }
+/* ---Aqui termina el Main--- */
 
+/* SECTION PRODUCTS */
+/* Contenedor de Products title */
 .products-title {
   display: flex;
   width: 80%;
@@ -389,6 +396,7 @@
   color: #565e6cff;
 }
 
+/* Contenedor de Products */
 .products {
   display: flex;
   width: 80%;

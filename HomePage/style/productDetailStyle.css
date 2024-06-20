@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* Variables globales que se reutilizan */
 :root {
   --color-primary: #093931ff;
   --color-secondary: #f5d38eff;
@@ -11,12 +12,15 @@
   --tipograhy-body: "Manrope", sans-serif;
 }
 
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* HEADER */
+/* Estilos del contenedor del header y del nav */
 .header__nav {
   background-color: var(--color-primary);
   display: flex;
@@ -47,7 +51,11 @@
   font-family: var(--tipograhy-body);
 }
 
-.header__links a:hover {
+.header__links ul .active {
+  border-color: var(--color-secondary);
+}
+
+.header__links ul .active a {
   color: var(--color-secondary);
 }
 
@@ -82,11 +90,14 @@
   display: none;
 }
 
+/* MAIN SECTION */
+/* Contenedor principal de la sección principal */
 .main-container {
   width: 80%;
   margin: auto;
 }
 
+/* Contenedor de Product nav */
 .product-nav {
   padding: 72px 0 0px 132px;
 }
@@ -106,6 +117,7 @@
   vertical-align: middle;
 }
 
+/* Contenedor de Product Container */
 .product-container {
   display: flex;
   padding: 24px 153px 72px 132px;
@@ -340,7 +352,9 @@
   position: relative;
   display: inline-block;
 }
+/* ---Aqui se acaba el Contenedor Main--- */
 
+/* Contenedor De Description */
 .containerDescription {
   height: auto;
   margin: auto;
@@ -383,6 +397,7 @@
   padding: 0px 72px 46px 0px;
 }
 
+/* Contenedor de Feature */
 .container-feature {
   display: flex;
   justify-content: space-between;
@@ -404,6 +419,7 @@
   color: var(--color-secondary);
 }
 
+/* Contenedor de Section Products */
 .products-title {
   display: flex;
   width: 80%;

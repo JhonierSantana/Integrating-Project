@@ -49,10 +49,12 @@
   font-family: var(--tipograhy-body);
 }
 
-.header__links ul li a:hover {
-  content: "";
-  display: block;
-  border-bottom: 2px solid var(--color-secondary);
+.header__links ul .active {
+  border-color: var(--color-secondary);
+}
+
+.header__links ul .active a {
+  color: var(--color-secondary);
 }
 
 .header__logo {

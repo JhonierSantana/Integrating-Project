@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+/* Variables globales que se reutilizan */
 :root {
   --color-primary: #093931ff;
   --color-secondary: #f5d38eff;
@@ -9,12 +10,15 @@
   --tipograhy-body: "Manrope", sans-serif;
 }
 
+/* Estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* HEADER */
+/* Estilos del contenedor del header y del nav */
 .header__nav {
   background-color: var(--color-primary);
   display: flex;
@@ -139,6 +143,8 @@
   stroke: var(--color-secondary);
 }
 
+/* MAIN SECTION */
+/* Contenedor principal de la sección principal */
 main {
   padding: 3.8rem;
   display: grid;
@@ -179,6 +185,8 @@ main {
   padding: 0.75em 1.25em 0.75em 0.75em;
 }
 
+/* FOOTER */
+/* Contenedor principal del footer */
 .footer {
   width: 100%;
   min-height: 234px;
@@ -298,6 +306,7 @@ main {
   gap: 10px;
 }
 
+/* Media query - modo responsivo */
 @media (min-width: 600px) {
   .card:nth-child(5) {
     grid-column: 1/3;
