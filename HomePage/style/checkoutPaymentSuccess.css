@@ -51,7 +51,11 @@
   font-family: var(--tipograhy-body);
 }
 
-.header__links a:hover {
+.header__links ul .active {
+  border-color: var(--color-secondary);
+}
+
+.header__links ul .active a {
   color: var(--color-secondary);
 }
 
@@ -296,6 +300,7 @@
   border: none;
   border-radius: 22px;
   font-family: var(--tipograhy-body);
+  cursor: pointer;
 }
 
 /* FOOTER */

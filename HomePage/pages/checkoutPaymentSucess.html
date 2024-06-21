@@ -13,13 +13,13 @@
         <div class="header__links">
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="./productDetails.html">Shop</a>
             </li>
             <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">Collections</a>
+              <a href="./collectionsDetails.html">Collections</a>
             </li>
             <li>
               <a href="">About</a>
@@ -129,7 +129,12 @@
           </div>
         </div>
         <div class="button-shopping">
-          <button class="continue-shopping">Continue shopping</button>
+          <button
+            class="continue-shopping"
+            onclick="window.location.href = './productDetails.html'"
+          >
+            Continue shopping
+          </button>
         </div>
       </div>
     </main>
