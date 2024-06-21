@@ -126,12 +126,12 @@
 }
 
 main {
-  padding: 3.8rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   width: 80%;
   margin: auto;
+  padding-bottom: 42px;
 }
 
 .card {
@@ -172,9 +172,16 @@ main {
 .products-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-top: 72px;
+  padding-bottom: 48px;
   width: 80%;
   margin: auto;
+}
+
+.products-container ul,
+.products-container a {
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav-links ul {
@@ -182,21 +189,208 @@ main {
   gap: 10px 5px;
 }
 
-.nav-links li a {
-  color: #0ac423;
+.nav-links a {
+  color: var(--color-text-primary);
   padding: 7px 60px;
-  border-radius: 50px;
+}
+
+.border-left {
+  border-right: 1px solid #9aefe2;
 }
 
 .nav-links li:first-child a {
   background-color: #004d40;
   color: #fff;
+  border-radius: 50px;
 }
-.Price{
+
+.price {
+  width: 138px;
+  height: 36px;
+  background: transparent;
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  border-width: 0px;
+  box-shadow: 0 1px 0 #9095a0;
 }
+
+.pestañas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 92px;
+}
+
+.pestañas i {
+  padding: 0px 10px;
+  align-items: center;
+}
+
+.pestañas p {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.pestaña-activa {
+  border-radius: 21px;
+  border: 1px solid var(--color-text-primary);
+  display: inline-block;
+  border-radius: 21px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: var(--tipograhy-body);
+  width: 41px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor de Feature */
+.container-feature {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+  background-color: var(--color-links);
+}
+
+.features {
+  text-align: center;
+  font-family: var(--tipograhy-body);
+  margin: 50px;
+  max-width: 250px;
+}
+
+.icon-feature {
+  fill: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+/* FOOTER */
+/* Contenedor principal del footer */
+.footer {
+  width: 100%;
+  min-height: 234px;
+  background-color: var(--color-primary);
+  background-color: var(--color-primary);
+  border-top: 1px solid #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 132px;
+  color: var(--color-links);
+}
+
+.footer-container a,
+.footer-container ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-logo {
+  font-size: 30px;
+  line-height: 46px;
+  font-weight: 300;
+  color: var(--color-secondary);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav-column {
+  margin-right: 94px;
+}
+
+.footer-link {
+  font-family: var(--tipograhy-body);
+}
+
+.footer-copyright {
+  font-family: var(--tipograhy-body);
+}
+
+.footer-item {
+  margin-bottom: 12px;
+}
+
+.footer-item a {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-links);
+}
+
+.footer-notices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-notices h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: var(--tipograpy-headings);
+}
+
+.footer-notices p {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-family: var(--tipograhy-body);
+}
+
+.footer-form {
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form-subscripcion-input {
+  width: 250px;
+  background-color: transparent;
+  border: solid 1px;
+  padding: 10px;
+  color: var(--color-links);
+  border-radius: 30px 0 0 30px;
+}
+
+.button-submit {
+  font-family: var(--tipograhy-body);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  background: var(--color-secondary);
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  padding: 0 12px;
+}
+
+.footer-container2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 132px;
+  align-items: center;
+  color: var(--color-links);
+}
+
+.footer-socialicons {
+  display: flex;
+  gap: 10px;
+}
+
 @media (min-width: 600px) {
   .card.large {
     grid-column: span 2;

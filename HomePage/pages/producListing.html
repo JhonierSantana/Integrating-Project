@@ -21,13 +21,13 @@
         <div class="header__links">
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="./producListing.html">Shop</a>
             </li>
             <li>
-              <a href="">Shop</a>
-            </li>
-            <li>
-              <a href="">Collections</a>
+              <a href="./collectionsDetails.html">Collections</a>
             </li>
             <li>
               <a href="">About</a>
@@ -75,19 +75,22 @@
     </div>
     <div class="products-container">
       <nav class="nav-products">
-      <div class="nav-links">
-        <ul>
-          <li><a href="">All</a></li>
-          <li><a href="">Rings</a></li>
-          <li><a href="">Bracelets</a></li>
-          <li><a href="">Necklaces</a></li>
-          <li><a href="">Earrings</a></li>
-        </ul>
-      </div>
-    </nav>
-      <div class="Price">
-        <li><a href="">Sort by Price</a></li>
-      </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="">All</a></li>
+            <li class="border-left"><a href="">Rings</a></li>
+            <li class="border-left"><a href="">Bracelets</a></li>
+            <li class="border-left"><a href="">Necklaces</a></li>
+            <li><a href="">Earrings</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="price">
+        Sort by price
+        <i
+          ><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt=""
+        /></i>
+      </button>
     </div>
     <main>
       <article class="card">
@@ -191,12 +194,14 @@
         </div>
       </article>
       <article class="card">
-        <figure>
-          <img
-            src="../assets/images/image32 (2).jpg"
-            alt="Luxury Charms Ring"
-          />
-        </figure>
+        <a href="./productDetails.html">
+          <figure>
+            <img
+              src="../assets/images/image32 (2).jpg"
+              alt="Luxury Charms Ring"
+            />
+          </figure>
+        </a>
         <div>
           <h2>Luxury Charms Ring</h2>
           <p>$620.73</p>
@@ -233,5 +238,139 @@
         </div>
       </article>
     </main>
+    <div class="pestañas">
+      <i><img src="../assets/icons/flechaIzquierda.svg" alt="" /></i>
+      <p>1</p>
+      <p class="pestaña-activa">2</p>
+      <p>3</p>
+      <i><img src="../assets/icons/tresPuntos.svg" alt="" /></i>
+      <p>10</p>
+      <i><img src="../assets/icons/flechaDerecha.svg" alt="" /></i>
+    </div>
+
+    <div class="container-feature">
+      <section>
+        <div class="features">
+          <i class="icon-feature">
+            <a href=""><img src="../assets/icons/delivery.svg" alt="" /></a>
+          </i>
+          <h2>Delivery</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </section>
+      <section>
+        <div class="features">
+          <i class="icon-feature">
+            <a href=""><img src="../assets/icons/love.svg" alt="" /></a>
+          </i>
+          <h2>Cuestomer Care</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </section>
+      <section>
+        <div class="features">
+          <i class="icon-feature">
+            <a href=""><img src="../assets/icons/lock.svg" alt="" /></a>
+          </i>
+          <h2>Payment security</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <a class="footer-logo" href=""
+          ><span class="footer-logo-text">Darling.</span></a
+        >
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <ul class="nav-footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link">Shop</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Collections</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <ul class="nav-footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link">Contact</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Privacy</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-notices">
+          <h3>Subscribe to our newsletter</h3>
+          <p>For product announcements and exclusive insights</p>
+          <form action="" class="footer-form">
+            <input
+              type="email"
+              placeholder="Input your email"
+              class="form-subscripcion-input"
+            />
+            <button type="submit" class="form-subscripcion-boton button-submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-container2">
+        <span class="footer-copyright">© 2022 Brand, Inc.</span>
+        <div class="footer-socialicons">
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-links"
+          >
+            <figure class="socialicons__icon icon-twitter">
+              <a href=""><img src="../assets/icons/twitter.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-facebook">
+              <a href=""><img src="../assets/icons/facebook.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-linkedin">
+              <a href=""><img src="../assets/icons/linkedin.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-youtube">
+              <a href=""><img src="../assets/icons/youtube.svg" alt="" /></a>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
