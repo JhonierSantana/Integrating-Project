@@ -47,6 +47,14 @@
   font-family: var(--tipograhy-body);
 }
 
+.header__links ul .active {
+  border-color: var(--color-secondary);
+}
+
+.header__links ul .active a {
+  color: var(--color-secondary);
+}
+
 .header__logo {
   font-family: var(--tipograpy-headings);
   text-decoration: none;
