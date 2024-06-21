@@ -169,7 +169,34 @@ main {
   font-family: var(--tipograhy-body);
   margin-top: 0.5rem;
 }
-/* aqui*/
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 10px 5px;
+}
+
+.nav-links li a {
+  color: #0ac423;
+  padding: 7px 60px;
+  border-radius: 50px;
+}
+
+.nav-links li:first-child a {
+  background-color: #004d40;
+  color: #fff;
+}
+.Price{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
 @media (min-width: 600px) {
   .card.large {
     grid-column: span 2;
@@ -198,5 +225,20 @@ main {
 @media (min-width: 1025px) {
   main {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .products-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-products ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .price-container {
+    margin-top: 20px;
   }
 }
