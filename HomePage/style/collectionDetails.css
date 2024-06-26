@@ -92,6 +92,7 @@
   aspect-ratio: 1440/810;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 0 11rem;
   display: flex;
   align-items: center;
@@ -318,6 +319,128 @@ main {
   }
   .card:nth-child(5) h2 {
     font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
+  }
+
+  .header__nav {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .header__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__links.active {
+    display: flex;
+  }
+
+  .header__links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__banner article {
+    width: auto;
+  }
+
+  .header__banner article h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--tipography-headings);
+    color: var(--color-links);
+    font-size: 3rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5vh;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-nav-column {
+    margin-right: 0;
+  }
+
+  .footer-link {
+    font-family: var(--tipograhy-body);
+  }
+
+  .footer-copyright {
+    font-family: var(--tipograhy-body);
+  }
+
+  .card-text-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 324px;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container2 {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+  .footer-notices {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-subscripcion-input {
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer-logo-text {
+    padding: 20px;
+    font-size: 25px;
+  }
+  .button-submit {
+    font-family: var(--tipograhy-body);
+    background: var(--color-secondary);
+    border-radius: 30px;
   }
 }
 
