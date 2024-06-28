@@ -246,7 +246,7 @@ function solicitarCompra() {
   }
 
   const cantidadInput = prompt("Ingrese la cantidad de unidades a comprar:");
-  const cantidad = parseFloat(cantidadInput); // Usar parseFloat para números decimales
+  const cantidad = parseFloat(cantidadInput);
 
   if (isNaN(cantidad) || cantidad <= 0) {
     alert("Cantidad inválida");
