@@ -29,7 +29,7 @@ const productsDetails = [
     },
   },
   {
-    id: 1,
+    id: 3,
     nombre: "Reflections Necklace",
     codigo: "N002",
     precioUnitario: 620.73,
@@ -43,7 +43,7 @@ const productsDetails = [
     },
   },
   {
-    id: 2,
+    id: 4,
     nombre: "Dreamy Infinity Ring",
     codigo: "R002",
     precioUnitario: 327.71,
@@ -57,7 +57,7 @@ const productsDetails = [
     },
   },
   {
-    id: 2,
+    id: 5,
     nombre: "Opulent Jewels Ring",
     codigo: "R004",
     precioUnitario: 168.76,
@@ -71,7 +71,7 @@ const productsDetails = [
     },
   },
   {
-    id: 3,
+    id: 6,
     nombre: "Serene Solitaire Earrings",
     codigo: "E001",
     precioUnitario: 125.28,
@@ -85,7 +85,7 @@ const productsDetails = [
     },
   },
   {
-    id: 3,
+    id: 7,
     nombre: "Timeless Halo Earrings",
     codigo: "E002",
     precioUnitario: 620.73,
@@ -99,7 +99,7 @@ const productsDetails = [
     },
   },
   {
-    id: 3,
+    id: 8,
     nombre: "Exquisite Earrings",
     codigo: "E003",
     precioUnitario: 327.71,
@@ -113,7 +113,7 @@ const productsDetails = [
     },
   },
   {
-    id: 2,
+    id: 9,
     nombre: "Timeless Elegance Ring",
     codigo: "R003",
     precioUnitario: 168.76,
@@ -126,9 +126,8 @@ const productsDetails = [
       },
     },
   },
-  //este es el que debes llenar por completo
   {
-    id: 2,
+    id: 10,
     nombre: "Luxury Charms Rings",
     codigo: "78205",
     precioUnitario: 620.73,
@@ -145,37 +144,11 @@ const productsDetails = [
     cantidadEnStock: {
       Rose_Gold: {
         unidad: 10,
-        //   size_48: 10,
-        //   size_50: 10,
-        //   size_52: 10,
-        //   size_54: 10,
-        //   size_56: 10,
-        //   size_58: 10,
-        //   size_60: 10,
-        //   size_62: 10,
-        //   size_64: 10,
-        //   size_66: 10,
-        //   size_68: 10,
-        //   size_70: 10,
-        // },
-        // White: {
-        //   size_48: 10,
-        //   size_50: 10,
-        //   size_52: 10,
-        //   size_54: 10,
-        //   size_56: 10,
-        //   size_58: 10,
-        //   size_60: 10,
-        //   size_62: 10,
-        //   size_64: 10,
-        //   size_66: 10,
-        //   size_68: 10,
-        //   size_70: 10,
       },
     },
   },
   {
-    id: 2,
+    id: 11,
     nombre: "Blissful Bloom Ring",
     codigo: "R004",
     precioUnitario: 620.73,
@@ -189,7 +162,7 @@ const productsDetails = [
     },
   },
   {
-    id: 2,
+    id: 12,
     nombre: "Sparkling Ring",
     codigo: "R005",
     precioUnitario: 620.73,
@@ -203,7 +176,7 @@ const productsDetails = [
     },
   },
   {
-    id: 2,
+    id: 13,
     nombre: "Glimmerin Ring",
     codigo: "R006",
     precioUnitario: 620.73,
@@ -262,18 +235,29 @@ console.log(
   ordenarPorPrecio(productsDetails, "descendente")
 );
 
-//5. Total a pagar de una compra
-const calcularTotalCompra = (productos) => {
-  return productos.reduce((total, producto) => {
-    const unidadesTotales = Object.values(producto.cantidadEnStock).reduce(
-      (suma, stock) => {
-        return suma + stock.unidad;
-      },
-      0
-    );
-    console.log("Unidades totales:", unidadesTotales);
-    return total + unidadesTotales * producto.precioUnitario;
-  }, 0);
+//5 total de compra
+function solicitarCompra() {
+  const input = prompt("Ingrese ID del producto:");
+  const producto = productsDetails.find((p) => p.id.toString() === input);
+
+  if (!producto) {
+    alert("Producto no encontrado");
+    return;
+  }
+
+  const cantidadInput = prompt("Ingrese la cantidad de unidades a comprar:");
+  const cantidad = parseFloat(cantidadInput); // Usar parseFloat para números decimales
+
+  if (isNaN(cantidad) || cantidad <= 0) {
+    alert("Cantidad inválida");
+  } else {
+    const total = calcularTotal(producto, cantidad);
+    console.log(`Total a pagar: ${total.toFixed(2)} USD`);
+  }
+}
+
+const calcularTotal = (producto, cantidad) => {
+  return producto.precioUnitario * cantidad;
 };
 
-console.log("Total a pagar:", calcularTotalCompra(productsDetails));
+solicitarCompra();
