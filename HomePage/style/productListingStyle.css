@@ -150,10 +150,12 @@ main {
 
 .card figure {
   width: 100%;
+  height: 80%;
 }
 
 .card.large figure {
   aspect-ratio: 4/5.1;
+  height: 90%;
 }
 
 .card figure img {
