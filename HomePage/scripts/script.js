@@ -217,7 +217,7 @@ const productsDetails = [
   },
 ];
 
-2; //filtrar elementos de un array
+ //2.filtrar elementos de un array
 function filtrarAccesorios(accesorios, tipoDeAccesorio) {
   const accesoriosFiltrados = accesorios.filter(
     (accesorios) => accesorios.tipoDeAccesorio === tipoDeAccesorio
