@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const productCard = `
         <article class="card ${shouldAddLargeClass ? "large" : ""}">
           <figure>
-            <img src="${producto.Imagenes}" alt="${producto.nombre}" />
+            <a href ="./"
+             <img src="${producto.Imagenes}" alt="${producto.nombre}" />
           </figure>
           <div>
             <h2>${producto.nombre}</h2>
