@@ -88,7 +88,7 @@
   top: 0;
   right: 0;
   width: 440px;
-  height: 900px;
+  height: 100%;
   background-color: var(--color-links);
   transition: right 0.3s ease;
   padding: 36px;
@@ -208,6 +208,7 @@
   background: var(--color-text-primary);
   border-radius: 26px;
   border: none;
+  cursor: pointer;
 }
 
 .total {
@@ -238,6 +239,17 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
+  display: none;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Color negro con 60% de opacidad */
+  z-index: 999;
   display: none;
 }
 

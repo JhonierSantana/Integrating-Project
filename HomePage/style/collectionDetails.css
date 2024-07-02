@@ -5,11 +5,11 @@
 :root {
   --color-primary: #093931ff;
   --color-secondary: #f5d38eff;
+  --color-text-primary: #0d554aff;
   --color-links: #fff;
-  --tipography-headings: "Cormorant Garamond", serif;
+  --tipograpy-headings: "Cormorant Garamond", serif;
   --tipograhy-body: "Manrope", sans-serif;
 }
-
 /* Estilos globales */
 * {
   margin: 0;
@@ -87,7 +87,7 @@
   top: 0;
   right: 0;
   width: 440px;
-  height: 900px;
+  height: 100%;
   background-color: var(--color-links);
   transition: right 0.3s ease;
   padding: 36px;
@@ -207,6 +207,7 @@
   background: var(--color-text-primary);
   border-radius: 26px;
   border: none;
+  cursor: pointer;
 }
 
 .total {
@@ -231,6 +232,24 @@
   font-weight: 700;
   color: #171a1fff;
   font-family: var(--tipograpy-headings);
+}
+
+.header__menu {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Color negro con 60% de opacidad */
+  z-index: 999;
+  display: none;
 }
 
 .header__menu {
