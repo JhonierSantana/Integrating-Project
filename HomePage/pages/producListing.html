@@ -24,10 +24,10 @@
               <a href="../index.html">Home</a>
             </li>
             <li class="active">
-              <a href="./producListing.html ">Shop</a>
+              <a href="../pages/producListing.html">Shop</a>
             </li>
             <li>
-              <a href="./collectionsDetails.html">Collections</a>
+              <a href="../pages/collectionsDetails.html">Collections</a>
             </li>
             <li>
               <a href="">About</a>
@@ -37,9 +37,75 @@
             <button>
               <i><img src="../assets/icons/profile.svg" alt="" /></i>
             </button>
-            <button>
-              <i><img src="../assets/icons/carShopping.svg" alt="" /></i>
-            </button>
+            <div class="cart-icon">
+              <button id="cart-button-open">
+                <i><img src="../assets/icons/carShopping.svg" alt="" /></i>
+              </button>
+            </div>
+          </div>
+          <div id="cart" class="cart">
+            <div class="cart-title">
+              <h2>Your cart</h2>
+              <button id="cart-button-close" class="button-close">
+                <img src="../assets/icons/iconoX.svg" alt="" />
+              </button>
+            </div>
+            <div class="cart-items">
+              <div class="cart-item">
+                <img
+                  src="../assets/images/imageShop32.jpg"
+                  alt="Luxury Charms Ring"
+                />
+                <div class="cart-item-info">
+                  <h4>Luxury Charms Ring</h4>
+                  <p>Code: 78205</p>
+                  <p>$620.73</p>
+                </div>
+                <div class="cart-sub-info">
+                  <button class="edit-item">✎</button>
+                  <span class="item-quantity">x1</span>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <img
+                  src="../assets/images/image34.jpg"
+                  alt="Exquisite Earrings"
+                />
+                <div class="cart-item-info">
+                  <h4>Exquisite Earrings</h4>
+                  <p>Code: 92701</p>
+                  <p>$125.28</p>
+                </div>
+                <div class="cart-sub-info">
+                  <button class="edit-item">✎</button>
+                  <span class="item-quantity">x1</span>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <img
+                  src="../assets/images/image36.jpg"
+                  alt="Delights Earrings"
+                />
+                <div class="cart-item-info">
+                  <h4>Delights Earrings</h4>
+                  <p>Code: 76201</p>
+                  <p>$327.71</p>
+                </div>
+                <div class="cart-sub-info">
+                  <button class="edit-item">✎</button>
+                  <span class="item-quantity">x1</span>
+                </div>
+              </div>
+            </div>
+            <div class="total-y-button">
+              <div class="total">
+                <p>Total:</p>
+                <p>$621.75</p>
+              </div>
+              <button>Continue to check out</button>
+            </div>
           </div>
         </div>
         <button class="header__menu">

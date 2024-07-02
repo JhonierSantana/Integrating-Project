@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const productCard = `
         <article class="card ${shouldAddLargeClass ? "large" : ""}">
           <figure>
-            <a href ="./"
-             <img src="${producto.Imagenes}" alt="${producto.nombre}" />
+            <a href="./productDetails.html?product=${producto.id}">
+              <img src="${producto.Imagenes}" alt="${producto.nombre}" />
+            </a>
           </figure>
           <div>
             <h2>${producto.nombre}</h2>
@@ -46,6 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   mostrarProducts(productsDetails, "All");
+});
+
+const cart = document.getElementById("cart");
+const cartButtonOpen = document.getElementById("cart-button-open");
+const cartButtonClose = document.getElementById("cart-button-close");
+
+// mostrar desplegable carrito
+cartButtonOpen.addEventListener("click", () => {
+  cart.classList.add("show");
+});
+
+cartButtonClose.addEventListener("click", () => {
+  cart.classList.remove("show");
 });
 
 // En proceso
