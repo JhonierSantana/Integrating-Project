@@ -3,6 +3,8 @@ import { productsDetails } from "../modules/arrayProductDetails.js";
 document.addEventListener("DOMContentLoaded", () => {
   const categorylinks = document.querySelectorAll(".categoria-link");
   const productosContainer = document.getElementById("products-container");
+  const searchInput = document.querySelector(".search-input");
+  const priceSort = document.querySelector(".price");
 
   const mostrarProducts = (productos, categoria) => {
     productosContainer.innerHTML = "";
@@ -47,8 +49,43 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   mostrarProducts(productsDetails, "All");
+
+  // filtrar por nombre
+  searchInput.addEventListener("input", function () {
+    if (searchInput) {
+      const terminoDeBusqueda = searchInput.value.trim().toLowerCase();
+      const busquedaAccesorios = productsDetails.filter((accesorio) =>
+        accesorio.nombre.toLowerCase().includes(terminoDeBusqueda)
+      );
+      mostrarProducts(busquedaAccesorios, "All");
+    } else {
+    }
+  });
+
+  //filtrar por precio
+  priceSort.addEventListener("change", function () {
+    const selectOption = priceSort.value;
+
+    let sortedProducts = [...productsDetails];
+
+    switch (selectOption) {
+      case "all":
+        break;
+      case "ascending":
+        sortedProducts.sort((a, b) => a.precioUnitario - b.precioUnitario);
+        break;
+      case "descending":
+        sortedProducts.sort((a, b) => b.precioUnitario - a.precioUnitario);
+        break;
+      default:
+        return;
+    }
+
+    mostrarProducts(sortedProducts, "All");
+  });
 });
 
+// despliegue del carrito
 const cartButtonOpen = document.getElementById("cart-button-open");
 const cartButtonClose = document.getElementById("cart-button-close");
 const cartButtonContinue = document.getElementById("cart-button-continue");
@@ -69,66 +106,3 @@ cartButtonContinue.addEventListener("click", function () {
   cart.classList.remove("show");
   overlay.style.display = "none";
 });
-
-// En proceso
-// function busquedaPorNombre(accesorios, terminoDeBusqueda) {
-//   const busquedaAccesorios = accesorios.filter((accesorios) =>
-//     accesorios.nombre.toLowerCase().includes(terminoDeBusqueda.toLowerCase())
-//   );
-//   return busquedaAccesorios;
-// }
-// const terminoDeBusqueda = busquedaPorNombre(productsDetails, "Glimme");
-// console.log("Busqueda por nombre");
-// console.log(terminoDeBusqueda);
-
-// // 4. Ordenar los precios de forma ascendente y descendente
-// const ordenarPorPrecio = (productos, orden) => {
-//   if (orden === "ascendente") {
-//     return productos.sort((a, b) => a.precioUnitario - b.precioUnitario);
-//   } else if (orden === "descendente") {
-//     return productos.sort((a, b) => b.precioUnitario - a.precioUnitario);
-//   } else {
-//     console.error('El orden debe ser "ascendente" o "descendente"');
-//   }
-// };
-
-// console.log(
-//   "Orden de precio ascendente: ",
-//   ordenarPorPrecio(productsDetails, "ascendente")
-// );
-
-// console.log(
-//   "Orden de precio descendente: ",
-//   ordenarPorPrecio(productsDetails, "descendente")
-// );
-
-// //5 total de compra
-// const carrito = [
-//   {
-//     id: 1,
-//     idProducto: 4,
-//     talla: "s",
-//     color: "oro",
-//     cantidad: 2,
-//     precioUnitario: 150000,
-//   },
-//   {
-//     id: 1,
-//     idProducto: 10,
-//     talla: "s",
-//     color: "plata",
-//     cantidad: 1,
-//     precioUnitario: 250000,
-//   },
-// ];
-
-// function totalAPagar(listaProductos) {
-//   const totalAPagar = listaProductos.reduce(
-//     (total, producto) => total + producto.cantidad * producto.precioUnitario,
-//     0
-//   );
-//   return totalAPagar;
-// }
-
-// const total = totalAPagar(carrito);
-// console.log(total);

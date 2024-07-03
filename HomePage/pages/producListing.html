@@ -167,12 +167,12 @@
           </ul>
         </div>
       </nav>
-      <button class="price">
-        Sort by price
-        <i
-          ><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt=""
-        /></i>
-      </button>
+      <select id="sortSelect" class="price">
+        <option selected disabled hidden>Sort by price</option>
+        <option value="all">Sort by price</option>
+        <option value="ascending">Precio: Menor a Mayor</option>
+        <option value="descending">Precio: Mayor a Menor</option>
+      </select>
     </div>
     <main id="products-container"></main>
     <div class="pestañas">
