@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         accesorio.nombre.toLowerCase().includes(terminoDeBusqueda)
       );
       mostrarProducts(busquedaAccesorios, "All");
-    } else {
     }
   });
 
