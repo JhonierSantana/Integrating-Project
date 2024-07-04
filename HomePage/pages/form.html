@@ -7,90 +7,259 @@
     <title>Formulario Checkout – add payment method</title>
   </head>
   <body>
-    <div class="formCustomerInformation">
-      <form class="customerInformation">
-        <h2>Customer information</h2>
-        <label for="nombre"><br />nombre completo </label><br />
+    <header class="header">
+      <nav class="header__nav">
+        <a class="header__logo" href="">Darling .</a>
+        <div class="header__links">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="./producListing.html">Shop</a>
+            </li>
+            <li>
+              <a href="./collectionsDetails.html">Collections</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <button>
+              <i><img src="../assets/icons/profile.svg" alt="" /></i>
+            </button>
+            <button>
+              <i><img src="../assets/icons/carShopping.svg" alt="" /></i>
+            </button>
+          </div>
+        </div>
+        <button class="header__menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#f5d38eff"
+          >
+            <path
+              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <div class="formContainer">
+      <form id="checkoutForm" class="form-main">
+        <div class="title">
+          <h2>Customer information</h2>
+        </div>
+        <label for="nombre">Nombre completo</label><br />
         <input
+          class="input-items"
           type="text"
           name="nombre"
           id="nombre"
-          placeholder="ingrese su nombre"
-        />
-        <label for="telefono">numero de telefono</label>
-        <input
-          type="tel"
-          name="telefono"
-          id="telefono"
-          placeholder="ingrese su numero de telefono"
-        />
+          placeholder="Ingrese su nombre"
+          required
+        /><br />
+        <div class="telefono-Direccion">
+          <div class="field">
+            <label for="telefono">Número de teléfono</label><br />
+            <input
+              class="input-items"
+              type="tel"
+              name="telefono"
+              id="telefono"
+              placeholder="Ingrese su número"
+              required
+              pattern="\d{10}"
+              maxlength="10"
+            />
+          </div>
+          <div class="field">
+            <label for="direccion">Dirección</label><br />
+            <input
+              class="input-items"
+              type="text"
+              name="direccion"
+              id="direccion"
+              placeholder="Ingrese su dirección"
+              required
+            />
+          </div>
+        </div>
         <br />
-        <label for="text">direccion</label><br />
-        <input
-          type="text"
-          name="text"
-          id="text"
-          placeholder="ingrese su direccion"
-        />
-        <button type="submit">Enviar</button>
-      </form>
-      <div class="formPaymentMethod">
-        <form class="PaymentMethod">
-          <h2>Informacion personal</h2>
+        <div class="title">
+          <h2>Información personal</h2>
           <h3>Completa los datos del formulario para realizar el pago</h3>
-          <label for="email">Correo electrónico</label><br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="ingrese su correo electrónico"
-          />
-
-          <label for="text"><br />Nombre en la tarjeta</label><br />
-          <input
-            type="text"
-            name="text"
-            id="text"
-            placeholder="ingrese el nombre en la tarjeta"
-          />
-
-          <label for="number"><br />Numero de la tarjeta</label><br />
-          <input
-            type="number"
-            name="number"
-            id="number"
-            placeholder="ingrese el numero de la tarjeta"
-          /><br />
-
-          <label for="expiryDate">Fecha de Caducidad:</label><br />
-          <select id="expiryDate" name="expiryDate" required>
-            <option value="" disabled selected>MM/AA</option>
-            <option value="01/24">01/24</option>
-            <option value="02/24">02/24</option>
-            <option value="03/24">03/24</option>
-            <option value="04/24">04/24</option>
-            <option value="05/24">05/24</option>
-            <option value="06/24">06/24</option>
-            <option value="07/24">07/24</option>
-            <option value="08/24">08/24</option>
-            <option value="09/24">09/24</option>
-            <option value="10/24">10/24</option>
-            <option value="11/24">11/24</option>
-            <option value="12/24">12/24</option>
-          </select>
-
-          <label for="cvv">CVV</label>
-          <input
-            type="number"
-            name="cvv"
-            id="cvv"
-            placeholder="Ingrese el CVV"
-            required
-          />
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+        </div>
+        <label for="email">Correo electrónico</label><br />
+        <input
+          class="input-items"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Ingrese su correo electrónico"
+          required
+          id="email"
+        /><br />
+        <label for="nombreTarjeta">Nombre en la tarjeta</label><br />
+        <input
+          class="input-items"
+          type="text"
+          name="nombreTarjeta"
+          id="nombreTarjeta"
+          placeholder="Ingrese el nombre en la tarjeta"
+          required
+        /><br />
+        <div class="field-with-multiple-icons">
+          <label for="numeroTarjeta">Número de la tarjeta</label><br />
+          <div class="input-wrapper">
+            <input
+              class="input-items"
+              type="text"
+              name="numeroTarjeta"
+              id="numeroTarjeta"
+              placeholder="Ingrese el número de la tarjeta"
+              required
+              pattern="\d{16}"
+              maxlength="16"
+            />
+            <div class="icon visa"></div>
+            <div class="icon mastercard"></div>
+          </div>
+        </div>
+        <br />
+        <div class="Fecha-CVV">
+          <div class="field">
+            <label for="expiryDate">Fecha de Caducidad</label>
+            <input
+              class="input-items"
+              type="text"
+              name="expiryDate"
+              id="expiryDate"
+              placeholder="MM/AA"
+              required
+              maxlength="5"
+            />
+          </div>
+          <div class="field">
+            <label for="cvv">CVV</label>
+            <input
+              class="input-items"
+              type="text"
+              name="cvv"
+              id="cvv"
+              placeholder="Ingrese el CVV"
+              required
+              pattern="\d{3,4}"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          onclick="window.location.href = './checkoutPaymentSucess.html'"
+        >
+          Enviar
+        </button>
+      </form>
     </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <a class="footer-logo" href=""
+          ><span class="footer-logo-text">Darling.</span></a
+        >
+        <div class="footer-nav">
+          <div class="footer-nav-column">
+            <ul class="nav-footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link">Shop</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Collections</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-column">
+            <ul class="nav-footer-list">
+              <li class="footer-item">
+                <a href="" class="footer-link">Contact</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Privacy</a>
+              </li>
+              <li class="footer-item">
+                <a href="" class="footer-link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-notices">
+          <h3>Subscribe to our newsletter</h3>
+          <p>For product announcements and exclusive insights</p>
+          <form action="" class="footer-form">
+            <input
+              type="email"
+              placeholder="Input your email"
+              class="form-subscripcion-input"
+            />
+            <button type="submit" class="form-subscripcion-boton button-submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-container2">
+        <span class="footer-copyright">© 2022 Brand, Inc.</span>
+        <div class="footer-socialicons">
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-links"
+          >
+            <figure class="socialicons__icon icon-twitter">
+              <a href=""><img src="../assets/icons/twitter.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-facebook">
+              <a href=""><img src="../assets/icons/facebook.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-linkedin">
+              <a href=""><img src="../assets/icons/linkedin.svg" alt="" /></a>
+            </figure>
+          </a>
+          <a
+            href="http://"
+            target=""
+            rel="noopener noreferrer"
+            class="footer-social-link"
+          >
+            <figure class="socialicons__icon icon-youtube">
+              <a href=""><img src="../assets/icons/youtube.svg" alt="" /></a>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="../scripts/form.js"></script>
   </body>
 </html>

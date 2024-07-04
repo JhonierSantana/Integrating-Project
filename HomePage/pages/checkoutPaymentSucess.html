@@ -233,5 +233,11 @@
       </div>
     </footer>
   </body>
-  <script type="module" src="../scripts/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const formData = JSON.parse(localStorage.getItem("formData"));
+      console.log("Form Data:", formData);
+      localStorage.removeItem("formData");
+    });
+  </script>
 </html>
