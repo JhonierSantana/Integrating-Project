@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/form.css" />
+    <title>Formulario Checkout – add payment method</title>
+  </head>
+  <body>
+    <div class="formCustomerInformation">
+      <form class="customerInformation">
+        <h2>Customer information</h2>
+        <label for="nombre"><br />nombre completo </label><br />
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="ingrese su nombre"
+        />
+        <label for="telefono">numero de telefono</label>
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          placeholder="ingrese su numero de telefono"
+        />
+        <br />
+        <label for="text">direccion</label><br />
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="ingrese su direccion"
+        />
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="formPaymentMethod">
+        <form class="PaymentMethod">
+          <h2>Informacion personal</h2>
+          <h3>Completa los datos del formulario para realizar el pago</h3>
+          <label for="email">Correo electrónico</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ingrese su correo electrónico"
+          />
+
+          <label for="text"><br />Nombre en la tarjeta</label><br />
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="ingrese el nombre en la tarjeta"
+          />
+
+          <label for="number"><br />Numero de la tarjeta</label><br />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="ingrese el numero de la tarjeta"
+          /><br />
+
+          <label for="expiryDate">Fecha de Caducidad:</label><br />
+          <select id="expiryDate" name="expiryDate" required>
+            <option value="" disabled selected>MM/AA</option>
+            <option value="01/24">01/24</option>
+            <option value="02/24">02/24</option>
+            <option value="03/24">03/24</option>
+            <option value="04/24">04/24</option>
+            <option value="05/24">05/24</option>
+            <option value="06/24">06/24</option>
+            <option value="07/24">07/24</option>
+            <option value="08/24">08/24</option>
+            <option value="09/24">09/24</option>
+            <option value="10/24">10/24</option>
+            <option value="11/24">11/24</option>
+            <option value="12/24">12/24</option>
+          </select>
+
+          <label for="cvv">CVV</label>
+          <input
+            type="number"
+            name="cvv"
+            id="cvv"
+            placeholder="Ingrese el CVV"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <script src="../scripts/form.js"></script>
+  </body>
+</html>
