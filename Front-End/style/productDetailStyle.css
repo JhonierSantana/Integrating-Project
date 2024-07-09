@@ -263,7 +263,7 @@
 
 /* Contenedor de Product nav */
 .product-nav {
-  padding: 72px 0 0px 132px;
+  padding: 72px 0 0px 66px;
 }
 
 .product-nav a {
@@ -284,7 +284,7 @@
 /* Contenedor de Product Container */
 .product-container {
   display: flex;
-  padding: 24px 153px 72px 132px;
+  padding: 24px 153px 72px 66px;
 }
 
 .product-img {
@@ -390,6 +390,10 @@
 
 .size-options .sizes {
   padding: 4px 9px 12px 0;
+}
+
+.sizes button {
+  margin-left: 3px;
 }
 
 .size-options .sizes button {

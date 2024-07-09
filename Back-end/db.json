@@ -5,23 +5,24 @@
       "nombre": "Luxury Gems Necklace",
       "codigo": "71230",
       "precioUnitario": 168.76,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Necklaces",
       "Imagenes": "../assets/images/imageShop25.jpg",
       "descripcion": "Enhance your elegance with our Luxury Gems Necklace, featuring a stunning array of meticulously selected gemstones. Perfect for special occasions or adding a touch of sophistication to your everyday look.",
       "cantidadEnStock": {
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -30,23 +31,24 @@
       "nombre": "Aurora Rings",
       "codigo": "74236",
       "precioUnitario": 125.28,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop23.jpg",
       "descripcion": "Radiate timeless beauty with our Aurora Rings. Featuring an exquisite design and crafted with premium materials, these rings are perfect for adding a touch of elegance to any outfit. Ideal for both special occasions and everyday wear.",
       "cantidadEnStock": {
-        "Gold": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -55,23 +57,24 @@
       "nombre": "Reflections Necklace",
       "codigo": "74875",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Necklaces",
       "Imagenes": "../assets/images/imageShop24.jpg",
       "descripcion": "Discover sophistication with our Reflections Necklace. This piece captures elegance with its refined design and quality craftsmanship, making it an essential accessory for both formal events and everyday glamour.",
       "cantidadEnStock": {
-        "red": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -80,23 +83,24 @@
       "nombre": "Dreamy Infinity Ring",
       "codigo": "73548",
       "precioUnitario": 327.71,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop26.jpg",
       "descripcion": "Embrace everlasting beauty with our Dreamy Infinity Ring. Symbolizing eternal love and infinite possibilities, this ring combines graceful design with superior craftsmanship, perfect for expressing your unique style and sentiments.",
       "cantidadEnStock": {
-        "Rose_Gold": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -105,23 +109,24 @@
       "nombre": "Opulent Jewels Ring",
       "codigo": "75486",
       "precioUnitario": 168.76,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/image30.jpg",
       "descripcion": "Indulge in luxury with our Opulent Jewels Ring. Exquisitely crafted and adorned with dazzling gems, this ring radiates elegance and sophistication, making it a statement piece for any occasion.",
       "cantidadEnStock": {
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -130,23 +135,24 @@
       "nombre": "Serene Solitaire Earrings",
       "codigo": "76463",
       "precioUnitario": 125.28,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Earrings",
       "Imagenes": "../assets/images/image27.jpg",
       "descripcion": "Elevate your style with our Serene Solitaire Earrings, designed to reflect grace and simplicity. Each pair is meticulously crafted to embody timeless elegance, offering a perfect complement to any occasion. Ideal for adding a touch of sophistication to your ensemble, these earrings are a must-have accessory for those who appreciate understated beauty.",
       "cantidadEnStock": {
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -155,23 +161,24 @@
       "nombre": "Timeless Halo Earrings",
       "codigo": "74860",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Earrings",
       "Imagenes": "../assets/images/image28.png",
       "descripcion": "Elegant and classic, these earrings feature a radiant halo design, perfect for any occasion. The intricate setting highlights the central gemstone, surrounded by a halo of smaller stones that catch the light beautifully.",
       "cantidadEnStock": {
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -180,23 +187,24 @@
       "nombre": "Exquisite Earrings",
       "codigo": "75486",
       "precioUnitario": 327.71,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Earrings",
       "Imagenes": "../assets/images/image29.jpg",
       "descripcion": "Sophisticated and stunning, these earrings add a touch of luxury to your style. The refined design showcases high-quality gemstones set in a delicate framework, creating a harmonious blend of elegance and brilliance.",
       "cantidadEnStock": {
-        "blue": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -205,23 +213,24 @@
       "nombre": "Timeless Elegance Ring",
       "codigo": "71450",
       "precioUnitario": 168.76,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop31.jpg",
       "descripcion": "This ring embodies grace and sophistication with a classic design featuring a stunning central stone. The band complements the gemstone's brilliance, perfect for engagements, anniversaries, or as a statement piece.",
       "cantidadEnStock": {
-        "Gold_Purple": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -230,37 +239,24 @@
       "nombre": "Luxury Charms Rings",
       "codigo": "78205",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop32.jpg",
       "descripcion": "Discover the elegance and style of our Gold Ring with Carnelian. This ring features a central carnelian stone in a charming orange hue, cut in a square shape with gently rounded edges. The ring is adorned with a delicate beaded chain, adding a unique and sophisticated touch to its design. Perfect for any occasion, this ring flawlessly combines classic beauty with modern style. Make it yours and add a touch of distinction to your jewelry collection!",
       "cantidadEnStock": {
-        "Rose_Gold": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
-        },
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -269,23 +265,24 @@
       "nombre": "Blissful Bloom Ring",
       "codigo": "79525",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop33.jpg",
       "descripcion": "Delicate and charming, this ring showcases a blooming floral design with intricately crafted petals adorned with sparkling gemstones. It adds a touch of whimsy and elegance to any jewelry collection.",
       "cantidadEnStock": {
-        "Gold": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -294,23 +291,24 @@
       "nombre": "Sparkling Ring",
       "codigo": "78305",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop35.jpg",
       "descripcion": "A dazzling ring that features a central gemstone surrounded by smaller stones, designed to sparkle brilliantly. Ideal for special occasions, it adds glamour and sophistication to any look.",
       "cantidadEnStock": {
-        "silver": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     },
@@ -319,23 +317,24 @@
       "nombre": "Glimmerin Ring",
       "codigo": "79145",
       "precioUnitario": 620.73,
+      "color": "Rose Gold",
       "tipoDeAccesorio": "Rings",
       "Imagenes": "../assets/images/imageShop34.jpg",
       "descripcion": "This ring shimmers and shines with a stunning array of gemstones that catch the light from every angle. The intricate design and craftsmanship make it a timeless addition to any jewelry collection.",
       "cantidadEnStock": {
-        "Gold": {
-          "size_48": 10,
-          "size_50": 10,
-          "size_52": 10,
-          "size_54": 10,
-          "size_56": 10,
-          "size_58": 10,
-          "size_60": 10,
-          "size_62": 10,
-          "size_64": 10,
-          "size_66": 10,
-          "size_68": 10,
-          "size_70": 10
+        "size": {
+          "48": 10,
+          "50": 10,
+          "52": 10,
+          "54": 10,
+          "56": 10,
+          "58": 10,
+          "60": 10,
+          "62": 10,
+          "64": 10,
+          "66": 10,
+          "68": 10,
+          "70": 10
         }
       }
     }
