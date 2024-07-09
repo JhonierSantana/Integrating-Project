@@ -1,243 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/checkoutPaymentSuccess.css" />
-    <title>Checkout Payment Sucess</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <a class="header__logo" href="">Darling .</a>
-        <div class="header__links">
-          <ul>
-            <li>
-              <a href="../index.html">Home</a>
-            </li>
-            <li class="active">
-              <a href="./producListing.html">Shop</a>
-            </li>
-            <li>
-              <a href="./collectionsDetails.html">Collections</a>
-            </li>
-            <li>
-              <a href="">About</a>
-            </li>
-          </ul>
-          <div class="header__buttons">
-            <button>
-              <i><img src="../assets/icons/profile.svg" alt="" /></i>
-            </button>
-            <button>
-              <i><img src="../assets/icons/carShopping.svg" alt="" /></i>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/checkoutPaymentSuccess.css" />
+  <title>Checkout Payment Success</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__logo" href="">Darling.</a>
+      <div class="header__links">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="./producListing.html">Shop</a></li>
+          <li><a href="./collectionsDetails.html">Collections</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+        <div class="header__buttons">
+          <button><i><img src="../assets/icons/profile.svg" alt="" /></i></button>
+          <button><i><img src="../assets/icons/carShopping.svg" alt="" /></i></button>
+        </div>
+      </div>
+      <button class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f5d38eff">
+          <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <main class="main-section">
+    <div class="thank-you-section">
+      <img src="../assets/images/image91.jpg" alt="Thank you image" />
+      <h1>Thank you for your purchase!</h1>
+      <p>You will receive a confirmation letter through your email.</p>
+    </div>
+    <div class="order-summary">
+      <div class="order-details">
+        <div class="order-item">
+          <div class="order-item-iconText date">
+            <img src="../assets/icons/calendar.svg" alt="Calendar icon" />
+            <p>Date</p>
+          </div>
+          <p class="order-item-info1" id="date"></p>
+        </div>
+        <div class="order-item">
+          <div class="order-item-iconText customer">
+            <img src="../assets/icons/customer.svg" alt="Customer icon" />
+            <p>Customer</p>
+          </div>
+          <p class="order-item-info2" id="customer"></p>
+        </div>
+        <div class="order-item payment-border">
+          <div class="order-item-iconText payment">
+            <img src="../assets/icons/payment.svg" alt="Payment icon" />
+            <p>Payment Method</p>
+          </div>
+          <p class="order-item-info3" id="paymentMethod"><img src="../assets/images/visa.png" alt="Visa logo" /></p>
+        </div>
+        <div class="order-item">
+          <div class="order-item-iconText order">
+            <img src="../assets/icons/order.svg" alt="Order icon" />
+            <p>Order Number</p>
+          </div>
+          <p class="order-item-info4">586789963</p>
+        </div>
+        <div class="order-item total-border">
+          <div class="order-item-iconText total">
+            <img src="../assets/icons/total.svg" alt="Total icon" />
+            <p>Total</p>
+          </div>
+          <p class="order-item-info4">$1058.72</p>
+        </div>
+      </div>
+      <div class="order-line">
+        <h2>Order Line</h2>
+        <div class="product-item">
+          <img src="../assets/images/miniatura-productDetails1.jpg" alt="Product image" />
+          <div class="product-details">
+            <div class="product-text">
+              <p>Luxury Charms Ring</p>
+              <p>Code: 78205</p>
+              <p>x1</p>
+            </div>
+            <p class="product-price">$620.73</p>
           </div>
         </div>
-        <button class="header__menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="40px"
-            viewBox="0 -960 960 960"
-            width="40px"
-            fill="#f5d38eff"
-          >
-            <path
-              d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
-            />
-          </svg>
+        <div class="product-item">
+          <img src="../assets/images/miniatura-productDetails1.jpg" alt="Product image" />
+          <div class="product-details">
+            <div class="product-text">
+              <p>Exquisite Earrings</p>
+              <p>Code: 92701</p>
+              <p>x1</p>
+            </div>
+            <p class="product-price">$125.28</p>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <img src="../assets/images/rectangulo.png" alt="Scroll indicator" />
+        </div>
+      </div>
+      <div class="button-shopping">
+        <button class="continue-shopping" onclick="window.location.href = './producListing.html'">
+          Continue shopping
         </button>
-      </nav>
-    </header>
-    <main class="main-section">
-      <div class="thank-you-section">
-        <img src="../assets/images/image91.jpg" alt="Thank you image" />
-        <h1>Thank you for your purchase!</h1>
-        <p>You will receive a confirmation letter through your email.</p>
       </div>
-      <div class="order-summary">
-        <div class="order-details">
-          <div class="order-item">
-            <div class="order-item-iconText date">
-              <img src="../assets/icons/calendar.svg" alt="Calendar icon" />
-              <p>Date</p>
-            </div>
-            <p class="order-item-info1">27/04/2022</p>
-          </div>
-          <div class="order-item">
-            <div class="order-item-iconText cuestomer">
-              <img src="../assets/icons/customer.svg" alt="Customer icon" />
-              <p>Customer</p>
-            </div>
-            <p class="order-item-info2">John Miller</p>
-          </div>
-          <div class="order-item payment-border">
-            <div class="order-item-iconText payment">
-              <img src="../assets/icons/payment.svg" alt="Payment icon" />
-              <p>Payment Method</p>
-            </div>
-            <img src="../assets/images/visa.png" alt="Visa logo" />
-          </div>
-          <div class="order-item">
-            <div class="order-item-iconText order">
-              <img src="../assets/icons/order.svg" alt="Order icon" />
-              <p>Order Number</p>
-            </div>
-            <p class="order-item-info4">586789963</p>
-          </div>
-          <div class="order-item total-border">
-            <div class="order-item-iconText total">
-              <img src="../assets/icons/total.svg" alt="Total icon" />
-              <p>Total</p>
-            </div>
-            <p class="order-item-info4">$1058.72</p>
-          </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <a class="footer-logo" href=""><span class="footer-logo-text">Darling.</span></a>
+      <div class="footer-nav">
+        <div class="footer-nav-column">
+          <ul class="nav-footer-list">
+            <li class="footer-item"><a href="" class="footer-link">Shop</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Collections</a></li>
+            <li class="footer-item"><a href="" class="footer-link">About</a></li>
+          </ul>
         </div>
-
-        <div class="order-line">
-          <h2>Order Line</h2>
-          <div class="product-item">
-            <img
-              src="../assets/images/miniatura-productDetails1.jpg"
-              alt="Product image"
-            />
-            <div class="product-details">
-              <div class="product-text">
-                <p>Luxury Charms Ring</p>
-                <p>Code: 78205</p>
-                <p>x1</p>
-              </div>
-              <p class="product-price">$620.73</p>
-            </div>
-          </div>
-          <div class="product-item">
-            <img
-              src="../assets/images/miniatura-productDetails1.jpg"
-              alt="Product image"
-            />
-            <div class="product-details">
-              <div class="product-text">
-                <p>Exquisite Earrings</p>
-                <p>Code: 92701</p>
-                <p>x1</p>
-              </div>
-              <p class="product-price">$125.28</p>
-            </div>
-          </div>
-          <div class="scroll-indicator">
-            <img src="../assets/images/rectangulo.png" alt="Scroll indicator" />
-          </div>
-        </div>
-        <div class="button-shopping">
-          <button
-            class="continue-shopping"
-            onclick="window.location.href = './producListing.html'"
-          >
-            Continue shopping
-          </button>
+        <div class="footer-nav-column">
+          <ul class="nav-footer-list">
+            <li class="footer-item"><a href="" class="footer-link">Contact</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Privacy</a></li>
+            <li class="footer-item"><a href="" class="footer-link">Terms</a></li>
+          </ul>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <a class="footer-logo" href=""
-          ><span class="footer-logo-text">Darling.</span></a
-        >
-        <div class="footer-nav">
-          <div class="footer-nav-column">
-            <ul class="nav-footer-list">
-              <li class="footer-item">
-                <a href="" class="footer-link">Shop</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Collections</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">About</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-nav-column">
-            <ul class="nav-footer-list">
-              <li class="footer-item">
-                <a href="" class="footer-link">Contact</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Privacy</a>
-              </li>
-              <li class="footer-item">
-                <a href="" class="footer-link">Terms</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-notices">
-          <h3>Subscribe to our newsletter</h3>
-          <p>For product announcements and exclusive insights</p>
-          <form action="" class="footer-form">
-            <input
-              type="email"
-              placeholder="Input your email"
-              class="form-subscripcion-input"
-            />
-            <button type="submit" class="form-subscripcion-boton button-submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
+      <div class="footer-notices">
+        <h3>Subscribe to our newsletter</h3>
+        <p>For product announcements and exclusive insights</p>
+        <form action="" class="footer-form">
+          <input type="email" placeholder="Input your email" class="form-subscripcion-input" />
+          <button type="submit" class="form-subscripcion-boton button-submit">Subscribe</button>
+        </form>
       </div>
-      <div class="footer-container2">
-        <span class="footer-copyright">© 2022 Brand, Inc.</span>
-        <div class="footer-socialicons">
-          <a
-            href="http://"
-            target=""
-            rel="noopener noreferrer"
-            class="footer-social-links"
-          >
-            <figure class="socialicons__icon icon-twitter">
-              <a href=""><img src="../assets/icons/twitter.svg" alt="" /></a>
-            </figure>
-          </a>
-          <a
-            href="http://"
-            target=""
-            rel="noopener noreferrer"
-            class="footer-social-link"
-          >
-            <figure class="socialicons__icon icon-facebook">
-              <a href=""><img src="../assets/icons/facebook.svg" alt="" /></a>
-            </figure>
-          </a>
-          <a
-            href="http://"
-            target=""
-            rel="noopener noreferrer"
-            class="footer-social-link"
-          >
-            <figure class="socialicons__icon icon-linkedin">
-              <a href=""><img src="../assets/icons/linkedin.svg" alt="" /></a>
-            </figure>
-          </a>
-          <a
-            href="http://"
-            target=""
-            rel="noopener noreferrer"
-            class="footer-social-link"
-          >
-            <figure class="socialicons__icon icon-youtube">
-              <a href=""><img src="../assets/icons/youtube.svg" alt="" /></a>
-            </figure>
-          </a>
-        </div>
+    </div>
+    <div class="footer-container2">
+      <span class="footer-copyright">© 2022 Brand, Inc.</span>
+      <div class="footer-socialicons">
+        <a href="http://" target="" rel="noopener noreferrer" class="footer-social-links">
+          <figure class="socialicons__icon icon-twitter"><a href=""><img src="../assets/icons/twitter.svg" alt="" /></a></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="footer-social-link">
+          <figure class="socialicons__icon icon-facebook"><a href=""><img src="../assets/icons/facebook.svg" alt="" /></a></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="footer-social-link">
+          <figure class="socialicons__icon icon-linkedin"><a href=""><img src="../assets/icons/linkedin.svg" alt="" /></a></figure>
+        </a>
+        <a href="http://" target="" rel="noopener noreferrer" class="footer-social-link">
+          <figure class="socialicons__icon icon-youtube"><a href=""><img src="../assets/icons/youtube.svg" alt="" /></a></figure>
+        </a>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const formData = JSON.parse(localStorage.getItem("formData"));
       console.log("Form Data:", formData);
-      localStorage.removeItem("formData");
+      if (formData) {
+        const dateElement = document.getElementById("date");
+        const customerElement = document.getElementById("customer");
+        const paymentMethodElement = document.getElementById("paymentMethod");
+        const currentDate = new Date();
+        const formattedDate = `${String(currentDate.getDate()).padStart(2, '0')}/${String(currentDate.getMonth() + 1).padStart(2, '0')}/${currentDate.getFullYear()}`;
+        dateElement.textContent = formattedDate;
+        customerElement.textContent = formData.nombre;
+        paymentMethodElement.innerHTML = '<img src="../assets/images/visa.png" alt="Visa logo" />';
+        localStorage.removeItem("formData");
+      }
     });
   </script>
+</body>
 </html>

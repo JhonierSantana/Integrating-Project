@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         numeroTarjeta: checkoutForm.numeroTarjeta.value,
         fechaCaducidad: checkoutForm.expiryDate.value,
         cvv: checkoutForm.cvv.value,
+        fecha: new Date().toLocaleDateString()
       };
       localStorage.setItem("formData", JSON.stringify(formData));
       window.location.href = "./checkoutPaymentSucess.html";
