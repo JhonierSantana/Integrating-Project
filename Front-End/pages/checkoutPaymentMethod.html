@@ -52,45 +52,7 @@
     <main class="main-container">
       <div class="order-summary">
         <h1 class="summary-title">Order summary</h1>
-        <div class="summary-item">
-          <img src="../assets/images/miniatura-productDetails1.jpg" alt="" />
-          <div class="summary-details">
-            <div class="summary-text">
-              <h2>Luxury Charms Ring</h2>
-              <p>Code: 78205</p>
-            </div>
-            <p class="summary-price">$620.73</p>
-          </div>
-          <button class="delete">
-            <img src="../assets/icons/deleteIcon.svg" alt="" />
-          </button>
-        </div>
-        <div class="summary-item">
-          <img src="../assets/images/image65.jpg" alt="" />
-          <div class="summary-details">
-            <div class="summary-text">
-              <h2>Exquisite Earrings</h2>
-              <p>Code: 92701</p>
-            </div>
-            <p class="summary-price">$125.28</p>
-          </div>
-          <button class="delete">
-            <img src="../assets/icons/deleteIcon.svg" alt="" />
-          </button>
-        </div>
-        <div class="summary-item">
-          <img src="../assets/images/image34.jpg" alt="" />
-          <div class="summary-details">
-            <div class="summary-text">
-              <h2>Delights Earrings</h2>
-              <p>Code: 78201</p>
-            </div>
-            <p class="summary-price">$327.71</p>
-          </div>
-          <button class="delete">
-            <img src="../assets/icons/deleteIcon.svg" alt="" />
-          </button>
-        </div>
+        <div id="cart-items-container"></div>
       </div>
 
       <div class="payment-method">
@@ -114,26 +76,28 @@
             <h2>Summary</h2>
             <div class="container-payment">
               <div>
-                <p class="payment-summary-subTitle">SubTotal</p>
+                <p class="payment-summary-price">Total</p>
                 <p class="payment-summary-subTitle">Discount</p>
                 <p class="payment-summary-subTitle">Fee</p>
               </div>
               <div>
-                <p class="payment-summary-price">$1073.72</p>
+                <p class="payment-summary-subTitle" id="cart-subtotal">
+                  SubTotal
+                </p>
+
                 <p class="payment-summary-price">-$15</p>
-                <p class="payment-summary-price">$0</p>
+                <p class="payment-summary-price">0</p>
               </div>
             </div>
           </div>
           <div>
-            payment-total
             <div class="border"></div>
             <div class="payment-total">
               <p>Total</p>
-              <p>$1058.72</p>
+              <p id="cart-total"></p>
             </div>
             <div class="payment-button">
-              <button onclick="window.location.href = './form.html'">
+              <button id="payment-button" onclick="proceedToPayment()">
                 Proceed to payment
               </button>
             </div>
@@ -269,5 +233,20 @@
         </div>
       </div>
     </footer>
+    <script>
+      function proceedToPayment() {
+        const productosEnCarrito =
+          JSON.parse(localStorage.getItem("carrito")) || [];
+
+        if (productosEnCarrito.length === 0) {
+          alert(
+            "Your cart is empty. Please add items before proceeding to payment."
+          );
+        } else {
+          window.location.href = "./form.html";
+        }
+      }
+    </script>
+    <script type="module" src="../scripts/checkoutPayment.js"></script>
   </body>
 </html>

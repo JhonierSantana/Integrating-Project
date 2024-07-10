@@ -1,4 +1,28 @@
+import { displayCarrito } from "./carrito.js";
+import { renderCartItems } from "./checkoutPayment.js";
+
 const productDetailsContainer = document.querySelector(".main-container");
+
+const agregarAlCarrito = (product, size, cantidad) => {
+  let productosEnCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const existingProductIndex = productosEnCarrito.findIndex(
+    (p) => p.id === product.id && p.size === size
+  );
+
+  if (existingProductIndex >= 0) {
+    productosEnCarrito[existingProductIndex].cantidad += cantidad;
+  } else {
+    const productoAdd = {
+      ...product,
+      size: size,
+      cantidad: cantidad,
+    };
+    productosEnCarrito.push(productoAdd);
+  }
+  localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
+  displayCarrito(productosEnCarrito);
+  attachCartEventListeners();
+};
 
 const displayProductDetails = (product) => {
   const sizesHTML = Object.keys(product.cantidadEnStock.size)
@@ -16,10 +40,13 @@ const displayProductDetails = (product) => {
       <i><img src="../assets/icons/flecha-productDetails.svg" alt="" /></i>
       <a href="#">${product.nombre}</a>
     </div>
+
     <div class="product-container">
       <div class="thumbnail-container">
-        <img class="thumbnail-active" src="${product.Imagenes}" alt="${product.nombre}" />
-        <!-- Aquí van las demás imágenes del producto -->
+        <img class="thumbnail-active" src="${product.Imagenes}" alt=${product.nombre}" />
+        <img  src="${product.Imagenes}" alt=${product.nombre}"  />
+        <img  src="${product.Imagenes}" alt=${product.nombre}" />
+        <img  src="${product.Imagenes}" alt=${product.nombre}" />
       </div>
       <div class="product-img">
         <img src="${product.Imagenes}" alt="${product.nombre}" />
@@ -30,7 +57,8 @@ const displayProductDetails = (product) => {
         <p class="price">$${product.precioUnitario}</p>
         <div class="color-options">
           <p>Color - ${product.color}</p>
-          <!-- Aquí van los botones de opciones de color -->
+          <button class="color-option silver selected"></button>
+          <button class="color-option rose"></button>
         </div>
         <div class="size-options">
           <div class="size-text">
@@ -48,82 +76,103 @@ const displayProductDetails = (product) => {
           <button class="quantity-button" data-action="increase">+</button>
         </div>
         <div class="buttons-product">
-          <button class="add-to-bag">
-            Add to bag
-          </button>
-          <button class="buy-now" onclick="window.location.href = './checkoutPaymentMethod.html'">
-            Buy now
-          </button>
+          <button class="add-to-bag">Add to bag</button>
+          <button class="buy-now">Buy now</button>
+        </div>
+        <div class="extra-info">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Delivery
+              <i><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt="" /></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Payment
+              <i><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt="" /></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Warranty
+              <i><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt="" /></i>
+            </button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Care
+              <i><img src="../assets/icons/flechaAbajo-ProductDetails.svg" alt="" /></i>
+            </button>
+          </div>
         </div>
       </div>
     </div>
   `;
 
-  //   const addToBagButton = productDetailsContainer.querySelector(".add-to-bag");
-  //   const sizeButtons = productDetailsContainer.querySelectorAll(".size-button");
-  //   const quantityInput =
-  //     productDetailsContainer.querySelector(".quantity-input");
+  const addToBagButton = productDetailsContainer.querySelector(".add-to-bag");
+  const sizeButtons = productDetailsContainer.querySelectorAll(".size-button");
+  const quantityInput =
+    productDetailsContainer.querySelector(".quantity-input");
 
-  //   // Manejar el clic en "Add to bag"
-  //   addToBagButton.addEventListener("click", () => {
-  //     const selectedSize = productDetailsContainer.querySelector(
-  //       ".sizes .size-button.selected"
-  //     );
+  addToBagButton.addEventListener("click", () => {
+    const selectedSize = productDetailsContainer.querySelector(
+      ".sizes .size-button.active"
+    );
 
-  //     // Verificar si se ha seleccionado un tamaño
-  //     if (!selectedSize) {
-  //       alert("Please select a size.");
-  //       return;
-  //     }
+    if (!selectedSize) {
+      alert("Please select a size.");
+      return;
+    }
 
-  //     const size = selectedSize.getAttribute("data-size");
-  //     const cantidad = parseInt(quantityInput.value);
+    const size = selectedSize.getAttribute("data-size");
+    const cantidad = parseInt(quantityInput.value);
 
-  //     // Agregar al carrito
-  //     agregarAlCarrito(product, size, cantidad);
-  //   });
+    agregarAlCarrito(product, size, cantidad);
+  });
 
-  //   // Agregar eventos a los botones de tamaño
-  //   sizeButtons.forEach((button) => {
-  //     button.addEventListener("click", () => {
-  //       sizeButtons.forEach((btn) => btn.classList.remove("selected"));
-  //       button.classList.add("selected");
-  //     });
-  //   });
+  sizeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      sizeButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
 
-  //   // Agregar eventos a los botones de cantidad
-  //   const quantityButtons =
-  //     productDetailsContainer.querySelectorAll(".quantity-button");
-  //   quantityButtons.forEach((button) => {
-  //     button.addEventListener("click", () => {
-  //       const action = button.getAttribute("data-action");
-  //       let cantidad = parseInt(quantityInput.value);
+  const quantityButtons =
+    productDetailsContainer.querySelectorAll(".quantity-button");
+  quantityButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const action = button.getAttribute("data-action");
+      let cantidad = parseInt(quantityInput.value);
 
-  //       if (action === "decrease" && cantidad > 1) {
-  //         cantidad--;
-  //       } else if (action === "increase" && cantidad < 10) {
-  //         cantidad++;
-  //       }
+      if (action === "decrease" && cantidad > 1) {
+        cantidad--;
+      } else if (action === "increase" && cantidad < 10) {
+        cantidad++;
+      }
 
-  //       quantityInput.value = cantidad;
-  //     });
-  //   });
-  // };
+      quantityInput.value = cantidad;
+    });
+  });
 
-  // const agregarAlCarrito = (product, size, cantidad) => {
+  // Event listener for Buy Now button
+  const buyNowButton = productDetailsContainer.querySelector(".buy-now");
+  buyNowButton.addEventListener("click", () => {
+    const selectedSize = productDetailsContainer.querySelector(
+      ".sizes .size-button.active"
+    );
 
-  //   let productosEnCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    if (!selectedSize) {
+      alert("Please select a size.");
+      return;
+    }
 
-  //   const productToAdd = {
-  //     ...product,
-  //     size: size,
-  //     cantidad: cantidad,
-  //   };
-  //   productosEnCarrito.push(productToAdd);
+    const size = selectedSize.getAttribute("data-size");
+    const cantidad = parseInt(quantityInput.value);
 
-  //   localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
+    agregarAlCarrito(product, size, cantidad);
 
-  //   displayCarrito(productosEnCarrito);
+    window.location.href = "./checkoutPaymentMethod.html";
+  });
 };
 
 const fetchProductDetailsContainer = async (productId) => {
@@ -151,4 +200,57 @@ document.addEventListener("DOMContentLoaded", () => {
   if (productId) {
     fetchProductDetailsContainer(productId);
   }
+
+  const productosEnCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  displayCarrito(productosEnCarrito);
+  attachCartEventListeners();
 });
+
+const attachCartEventListeners = () => {
+  const cartButtonOpen = document.getElementById("cart-button-open");
+  const cartButtonClose = document.getElementById("cart-button-close");
+  const cartButtonContinue = document.getElementById("cart-button-continue");
+  const cart = document.getElementById("cart");
+  const overlay = document.querySelector(".cart-overlay");
+
+  if (cartButtonOpen) {
+    cartButtonOpen.addEventListener("click", function () {
+      cart.classList.add("show");
+      overlay.style.display = "block";
+    });
+  }
+
+  if (cartButtonClose) {
+    cartButtonClose.addEventListener("click", function () {
+      cart.classList.remove("show");
+      overlay.style.display = "none";
+      console.log("Carrito cerrado");
+    });
+  }
+
+  if (cartButtonContinue) {
+    cartButtonContinue.addEventListener("click", function () {
+      cart.classList.remove("show");
+      overlay.style.display = "none";
+    });
+  }
+};
+
+export const attachDeleteEventListeners = (productosEnCarrito) => {
+  const deleteButtons = document.querySelectorAll(".delete-item");
+
+  deleteButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      console.log("Producto eliminado del carrito");
+
+      productosEnCarrito.splice(index, 1);
+
+      localStorage.setItem("carrito", JSON.stringify(productosEnCarrito));
+
+      displayCarrito(productosEnCarrito);
+      renderCartItems();
+      attachDeleteEventListeners(productosEnCarrito);
+      attachCartEventListeners();
+    });
+  });
+};

@@ -104,6 +104,7 @@
 .order-summary {
   width: 75%;
   height: 505px;
+  overflow-y: auto;
 }
 
 .order-summary,
@@ -165,14 +166,14 @@
   color: #565e6cff;
 }
 
-.delete {
+.delete-item {
   margin-left: auto;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.delete img {
+.delete-item img {
   width: 24px;
   height: 24px;
   fill: #565e6cff;
