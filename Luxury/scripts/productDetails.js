@@ -177,7 +177,7 @@ const displayProductDetails = (product) => {
 const fetchProductDetailsContainer = async (productId) => {
   try {
     const response = await fetch(
-      `http://localhost:3000/productos/${productId}`
+      `https://fake-api-eight-gilt.vercel.app/productos/${productId}`
     );
     if (!response.ok) {
       throw new Error("HTTP error " + response.status);

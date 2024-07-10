@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const obtenerProductos = async (categoria = "All") => {
     try {
-      const response = await fetch("http://localhost:3000/productos");
+      const response = await fetch(
+        "https://fake-api-eight-gilt.vercel.app/productos"
+      );
       const productos = await response.json();
       filtradoDeProductos(productos, categoria);
     } catch (error) {
@@ -61,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // filtrar por nombre
   searchInput.addEventListener("input", async function () {
     try {
-      const response = await fetch("http://localhost:3000/productos");
+      const response = await fetch(
+        "https://fake-api-eight-gilt.vercel.app/productos"
+      );
       const productos = await response.json();
       const terminoDeBusqueda = searchInput.value.trim().toLowerCase();
       const busquedaAccesorios = productos.filter((accesorio) =>
@@ -76,7 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //filtrar por precio
   priceSort.addEventListener("change", async function () {
     try {
-      const response = await fetch("http://localhost:3000/productos");
+      const response = await fetch(
+        "https://fake-api-eight-gilt.vercel.app/productos"
+      );
       const productos = await response.json();
       const selectOption = priceSort.value;
 
