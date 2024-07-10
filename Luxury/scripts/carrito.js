@@ -11,7 +11,7 @@ export const displayCarrito = (productosEnCarrito) => {
       <div class="cart-title">
         <h2>Your cart</h2>
         <button id="cart-button-close" class="button-close">
-            <img src="/Front-End/assets/icons/iconoX.svg" alt="" />
+            <img src="/Luxury/assets/icons/iconoX.svg" alt="" />
         </button>
       </div>
       <div class="cart-items">
