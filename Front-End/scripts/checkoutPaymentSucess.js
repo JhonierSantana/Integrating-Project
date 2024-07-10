@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
       orderNumberElement.textContent = orderNumber;
     }
 
-    // Calcular y mostrar el total de la compra
-    const totalContainer = document.querySelector(".order-item.total-border");
+    const totalContainer = document.querySelector(
+      ".order-item.total-border .order-item-info4"
+    );
     if (totalContainer) {
       const total = productosComprados.reduce((sum, product) => {
         return sum + product.precioUnitario * product.cantidad;

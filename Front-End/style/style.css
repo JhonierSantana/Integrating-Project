@@ -118,6 +118,8 @@
   align-items: flex-start;
   padding-bottom: 12px;
   align-items: center;
+  border-bottom: 1px solid #dee1e6ff;
+  margin-top: 20px;
 }
 
 .cart-item:nth-child(1),
@@ -141,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 89px;
+  gap: 7px;
 }
 
 .cart-sub-info button {
@@ -186,6 +188,13 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.delete-item {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
 }
 
 .total-y-button {

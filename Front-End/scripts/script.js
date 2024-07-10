@@ -101,5 +101,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-// despliegue del carrito

@@ -154,7 +154,6 @@ const displayProductDetails = (product) => {
     });
   });
 
-  // Event listener for Buy Now button
   const buyNowButton = productDetailsContainer.querySelector(".buy-now");
   buyNowButton.addEventListener("click", () => {
     const selectedSize = productDetailsContainer.querySelector(

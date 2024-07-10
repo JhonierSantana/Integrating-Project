@@ -26,7 +26,9 @@ const renderCartItems = () => {
                 <p>Size - ${product.size}</p>
                 <p>x${product.cantidad}</p>
               </div>
-              <p class="summary-price">$${product.precioUnitario.toFixed(2)}</p>
+              <p class="summary-price">$${
+                product.precioUnitario * product.cantidad
+              }</p>
             </div>
             <button class="delete-item" data-id="${product.id}" data-size="${
         product.size
@@ -37,10 +39,9 @@ const renderCartItems = () => {
     )
     .join("");
 
-  const total = productosEnCarrito.reduce(
-    (sum, product) => sum + product.precioUnitario * product.cantidad,
-    0
-  );
+  const total = productosEnCarrito.reduce((sum, product) => {
+    return sum + product.precioUnitario * product.cantidad;
+  }, 0);
 
   cartSubtotal.textContent = `$${total.toFixed(2)}`;
   cartTotal.textContent = `$${total.toFixed(2)}`;
