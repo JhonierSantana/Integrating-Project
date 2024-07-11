@@ -26,9 +26,7 @@ const renderCartItems = () => {
                 <p>Size - ${product.size}</p>
                 <p>x${product.cantidad}</p>
               </div>
-              <p class="summary-price">$${
-                product.precioUnitario * product.cantidad
-              }</p>
+              <p>$${(product.precioUnitario * product.cantidad).toFixed(2)}</p>
             </div>
             <button class="delete-item" data-id="${product.id}" data-size="${
         product.size
