@@ -24,7 +24,9 @@ export const displayCarrito = (productosEnCarrito) => {
                 <h4>${product.nombre}</h4>      
                 <p>Size - ${product.size}</p>
                 <p>Code: ${product.codigo}</p>
-                <p>$${product.precioUnitario * product.cantidad}</p>
+                <p>$${(product.precioUnitario * product.cantidad).toFixed(
+                  2
+                )}</p>
               </div>
               <div class="cart-sub-info">
                 <button class="edit-item">✎</button>
